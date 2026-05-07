@@ -20,7 +20,7 @@ A beautifully crafted **Personal Portfolio Website** built with **HTML5, CSS3, a
 
 <div align="center">
 
-<img src="imgs/ReadMe.png" alt="Portfolio Preview" width="100%" style="border-radius:12px; box-shadow:0 20px 50px rgba(0,0,0,0.15);" />
+<img src="ReadMe image/ReadMe.png" alt="Portfolio Preview" width="100%" style="border-radius:12px; box-shadow:0 20px 50px rgba(0,0,0,0.15);" />
 
 </div>
 
