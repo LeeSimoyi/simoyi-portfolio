@@ -2469,7 +2469,6 @@ section {
   flex-shrink: 0;
 }
 
-/* Hidden checkbox drives the toggle */
 .theme-toggle__checkbox {
   opacity: 0;
   width: 0;
@@ -2477,7 +2476,6 @@ section {
   position: absolute;
 }
 
-/* The pill-shaped track */
 .theme-toggle__track {
   display: flex;
   align-items: center;
@@ -2492,7 +2490,6 @@ section {
   overflow: hidden;
 }
 
-/* The sliding thumb */
 .theme-toggle__thumb {
   position: absolute;
   left: 3px;
@@ -2508,7 +2505,6 @@ section {
   z-index: 2;
 }
 
-/* Icons inside the thumb */
 .theme-toggle__icon {
   font-size: 11px;
   line-height: 1;
@@ -2554,7 +2550,7 @@ section {
    ========================================================================== */
 
 html.dark {
-  /* ── Core palette ── */
+  /* ============ Core palette ============= */
   --color-primary:          #10d46a;
   --color-primary-dark:     #0fbd60;
   --color-bg-primary:       #0f172a;
@@ -2572,7 +2568,7 @@ html.dark {
    (Alphabetical by section for easy maintenance)
    ========================================================================== */
 
-/* ── About ── */
+/* ============== About ============== */
 html.dark .about {
   background: #1a2642;
 }
@@ -2583,13 +2579,13 @@ html.dark .about .about-content .about-info p {
   border-bottom-color: var(--color-border);
 }
 
-/* ── Body / Base ── */
+/* ============ Body / Base ============= */
 html.dark body {
   background: var(--color-bg-primary);
   color: var(--color-text-primary);
 }
 
-/* ── CTA Section ── */
+/* ============= CTA Section ============== */
 html.dark .cta-section {
   /* Darken the photo overlay a bit more */
   background:
@@ -2607,7 +2603,7 @@ html.dark .cta-badge {
   border-color: rgba(255, 255, 255, 0.12);
 }
 
-/* ── Contact ── */
+/* =============== Contact ==================== */
 html.dark .contact-wrapper {
   background: linear-gradient(135deg, #0f172a, #131f35);
 }
@@ -2631,7 +2627,7 @@ html.dark .contact-form textarea:focus {
   border-color: var(--color-primary);
 }
 
-/* ── Education & Skill Blocks ── */
+/* ================== Education & Skill Blocks ===================== */
 html.dark .education-block,
 html.dark .skill-block {
   background: #162032;
@@ -2647,7 +2643,7 @@ html.dark .bar {
   background: #1e3350;
 }
 
-/* ── Footer ── */
+/* ===================== Footer ==================== */
 html.dark .footer {
   background: #0a1020;
 }
@@ -2655,7 +2651,7 @@ html.dark .footer hr {
   background: rgba(255, 255, 255, 0.12);
 }
 
-/* ── Hero ── */
+/* ===================== Hero ====================== */
 html.dark .hero-section {
   background: linear-gradient(to bottom, #0f172a, #111827);
 }
@@ -2669,7 +2665,7 @@ html.dark .hero-layout__image img {
   border-color: #2d3f55;
 }
 
-/* ── Highlight Cards ── */
+/* ================= Highlight Cards ==================== */
 html.dark .highlight-card {
   background: #162032;
   border-color: #2d3f55;
@@ -2683,7 +2679,7 @@ html.dark .highlights-section {
   background: #1a2642;
 }
 
-/* ── Navbar ── */
+/* ================== Navbar =================== */
 html.dark .nav-root.transparent {
   background: rgba(15, 23, 42, 0.75);
 }
