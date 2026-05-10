@@ -1,648 +1,754 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
-    <title>Simoyi Lee | Full-Stack Web Developer & UI/UX Designer</title>
-    <meta name="description" content="Official portfolio of Simoyi Lee, Full-Stack Web Developer and UI/UX Designer creating modern, responsive, and high-performance websites.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+  <title>Simoyi Lee — Full-Stack Developer & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Simoyi Lee — Full-Stack Web Developer and UI/UX Designer crafting modern, high-performance digital experiences." />
 
-    <!-- Fonts & Icons -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- ================= NAVBAR STARTS HERE ================= -->
-  <div class="nav-overlay" id="navOverlay"></div>
+  <!--  Cursor  -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
 
-  <header class="nav-root transparent" id="navRoot">
-    <nav class="nav-container">
-      <a href="#home" class="logo"><span>Sim</span>oyi.</a>
-
-      <div class="nav-links" id="navLinks">
-        <div class="nav-close-btn" id="navCloseBtn">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-
-        <ul>
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#servicesSection" class="nav-link">What I Do</a></li>
-          <li><a href="#highlights" class="nav-link">Why Hire Me</a></li>
-          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <!-- =====================================================
-     DARK MODE TOGGLE — paste this inside <nav class="nav-container">
-     just BEFORE the closing </nav> tag (after the hamburger div).
-     ===================================================== -->
-
-<label class="theme-toggle" aria-label="Toggle dark mode">
-  <input
-    type="checkbox"
-    class="theme-toggle__checkbox"
-    id="themeCheckbox"
-    aria-label="Toggle dark mode"
-  >
-  <div class="theme-toggle__track">
-    <span class="theme-toggle__thumb">
-      <!-- Sun icon (light mode) -->
-      <i class="fa-solid fa-sun  theme-toggle__icon theme-toggle__icon--sun"></i>
-      <!-- Moon icon (dark mode) -->
-      <i class="fa-solid fa-moon theme-toggle__icon theme-toggle__icon--moon"></i>
-    </span>
+  <!-- Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-inner">
+      <span class="loader-name">Simoyi<span>.</span></span>
+      <div class="loader-bar"><span></span></div>
+    </div>
   </div>
-</label>
 
+  <!-- Navbar -->
+  <div class="nav-overlay" id="navOverlay"></div>
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner">
+      <a href="#home" class="nav-logo">Sim<span>.</span></a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-close-item">
+          <button class="nav-close-btn" id="navCloseBtn" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+        <li><a href="#home"      class="nav-link active">Home</a></li>
+        <li><a href="#about"     class="nav-link">About</a></li>
+        <li><a href="#skills"    class="nav-link">Skills</a></li>
+        <li><a href="#services"  class="nav-link">Services</a></li>
+        <li><a href="#portfolio" class="nav-link">Work</a></li>
+        <li><a href="#contact"   class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-sun"  id="iconSun"></i>
+          <i class="fa-solid fa-moon" id="iconMoon"></i>
+        </button>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
   </header>
-<!-- ================= NAVBAR ENDS HERE  ================= -->
 
-<!-- ================= HERO SECTION STARTS HERE ================= -->
-<section id="home" class="hero-section">
-  <div class="layout-wrapper hero-layout">
-    <div class="hero-layout__image reveal reveal-left">
-      <img src="imgs/Banner-image.jpg" alt="Simoyi">
-    </div>
-    <div class="hero-layout__content reveal reveal-right">
-      <h1 class="hero-title">
-        Full-Stack Web <br>
-        & <span class="hero-gradient">UI/UX</span> Developer
-      </h1>
-      <p class="hero-description">
-        I build fast, scalable web applications with clean UI and
-        real-world impact using modern web technologies.
-      </p>
-
-       <a href="#contact" class="hero-button">
-          Contact Me
-          <i class="fa-solid fa-arrow-right"></i>
-       </a>
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-blob hero-blob--1"></div>
+      <div class="hero-blob hero-blob--2"></div>
+      <div class="hero-grid"></div>
     </div>
 
-  </div>
+    <div class="hero-layout">
+      
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>Available for Freelance Projects
+        </div>
 
-  <!-- ===== SCROLL INDICATOR ===== -->
-  <a href="#about" class="hero-scroll-indicator">
+        <h1 class="hero-title">
+          Building <span class="hero-highlight">Digital</span>
+          Experiences That Matter
+        </h1>
 
-    <div class="hero-scroll-indicator__wrapper">
-      <div class="hero-scroll-indicator__liquid"></div>
-      <svg class="hero-scroll-indicator__svg" viewBox="0 0 60 90">
-        <rect x="10" y="10" width="40" height="70" rx="25"
-              class="mouse-outline"/>
-        <rect x="26" y="25" width="8" height="0"
-              rx="4"
-              id="scrollProgress"
-              class="scroll-progress"/>
-        <circle cx="30" cy="30" r="4"
-                class="scroll-wheel"/>
-      </svg>
-    </div>
-    <span class="hero-scroll-indicator__text">Scroll</span>
-  </a>
-
-</section>
-<!-- ================= HERO SECTION ENDS HERE ================= -->
-
-<!-- ================= ABOUT-SECTION STARTS HERE ================= -->
- <section id="about" class="about">
-  <div class="container">
-    <h2 class="section-title reveal">About Me</h2>
-    <div class="about-content">
-      <div class="about-img reveal reveal-left">
-        <img src="imgs/lee.png" alt="About profile picture">
-      </div>
-      <div class="about-info reveal reveal-right">
-        <h3>Hi, I’m Simoyi👋</h3>
-        <h4>Full-Stack Web Developer & <span>UI/UX Designer</span></h4>
-        <p>
-          I design and develop responsive, modern websites and web applications
-          with a strong focus on usability and performance. Passionate about
-          creating intuitive digital experiences through clean design,
-          efficient code, and meaningful user interactions.
+        <p class="hero-sub">
+          Full-Stack Developer &amp; UI/UX Designer crafting fast, scalable,
+          and visually stunning web applications.
         </p>
-        <div class="about-footer">
-          <a href="file/Simoyi-Lee-Resume.pdf" target="_blank" class="btn">
-              My Resume <i class="fa-solid fa-download"></i>
+
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn-primary">
+            View My Work <i class="fa-solid fa-arrow-right"></i>
           </a>
-          <div class="projects">
+          <a href="#contact" class="btn-ghost btn-ghost--hero">
+            Let's Talk <i class="fa-regular fa-comment-dots"></i>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
             <strong>4+</strong>
-            <span>Completed<br>Projects</span>
+            <span>Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>2+</strong>
+            <span>Years</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>10+</strong>
+            <span>Technologies</span>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="hero-image-wrap reveal reveal-right">
+        <div class="hero-image-ring"></div>
+        <div class="hero-image-ring hero-image-ring--2"></div>
+        <img src="imgs/Banner-image.jpg" alt="Simoyi Lee" class="hero-photo" />
+
+        <div class="hero-image-badge">
+          <i class="fa-brands fa-figma"></i>
+          <span>UI Designer</span>
+        </div>
+
+        <div class="hero-image-badge hero-image-badge--2 hero-image-badge--compact">
+          <i class="fa-solid fa-code"></i>
+          <span>Dev</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="hero-scroll" id="heroScroll">
+      <div class="hero-scroll-mouse">
+        <div class="hero-scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </a>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>HTML5</span><span class="dot">·</span>
+      <span>CSS3</span><span class="dot">·</span>
+      <span>JavaScript</span><span class="dot">·</span>
+      <span>React.js</span><span class="dot">·</span>
+      <span>Figma</span><span class="dot">·</span>
+      <span>WordPress</span><span class="dot">·</span>
+      <span>SEO</span><span class="dot">·</span>
+      <span>UI/UX Design</span><span class="dot">·</span>
+      <span>Node.js</span><span class="dot">·</span>
+      <span>Graphic Design</span><span class="dot">·</span>
+      <span>HTML5</span><span class="dot">·</span>
+      <span>CSS3</span><span class="dot">·</span>
+      <span>JavaScript</span><span class="dot">·</span>
+      <span>React.js</span><span class="dot">·</span>
+      <span>Figma</span><span class="dot">·</span>
+      <span>WordPress</span><span class="dot">·</span>
+      <span>SEO</span><span class="dot">·</span>
+      <span>UI/UX Design</span><span class="dot">·</span>
+      <span>Node.js</span><span class="dot">·</span>
+      <span>Graphic Design</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-tag reveal"><span>About Me</span></div>
+
+      <div class="about-grid">
+        <div class="about-image-col reveal reveal-left">
+          <div class="about-img-frame">
+            <img src="imgs/lee.png" alt="Simoyi Lee" />
+            <div class="about-img-accent"></div>
+          </div>
+          <div class="about-card-float">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <strong>BCA Student</strong>
+              <span>Galgotias University</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal reveal-right">
+          <h2 class="section-heading">Hi, I'm <em>Simoyi</em> 👋</h2>
+          <p class="about-role">Full-Stack Developer & UI/UX Designer</p>
+          <p class="about-desc">
+            I design and develop responsive, modern websites and web applications
+            with a strong focus on usability and performance. Passionate about
+            creating intuitive digital experiences through clean design,
+            efficient code, and meaningful user interactions.
+          </p>
+          <p class="about-desc">
+            Currently pursuing my Bachelor of Computer Applications at Galgotias
+            University, I combine academic knowledge with real-world freelance
+            projects to deliver outstanding results.
+          </p>
+
+          <div class="about-facts">
+            <div class="fact">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>New Delhi, India</span>
+            </div>
+            <div class="fact">
+              <i class="fa-solid fa-envelope"></i>
+              <span>leesimoyi@gmail.com</span>
+            </div>
+            <div class="fact">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Available for work</span>
+            </div>
+          </div>
+
+          <div class="about-actions">
+            <a href="file/Simoyi-Lee-Resume.pdf" target="_blank" class="btn-primary">
+              Download CV <i class="fa-solid fa-download"></i>
+            </a>
+            <a href="#contact" class="btn-outline">
+              Contact Me <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
- <!-- ================= ABOUT-SECTION ENDS HERE ================= -->
+  </section>
 
-<!-- ================= SKILLS-SECTION STARTS HERE ================= -->
-<section id="skills" class="skills-section">
-  <div class="container">
-
-    <h2 class="section-title reveal">Skills</h2>
-
-    <div class="intro reveal">
-      <h3>Education & Expertise</h3>
-      <p>
-        Delivering modern, scalable web experiences by combining development
-        skills with strong design principles and user-focused thinking.
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-tag reveal"><span>My Skills</span></div>
+      <h2 class="section-heading center reveal">Education & <em>Expertise</em></h2>
+      <p class="section-sub center reveal">
+        Combining development skills with design thinking to deliver modern, scalable experiences.
       </p>
-    </div>
 
-    <div class="skills-layout">
-
-      <!-- LEFT COLUMN -->
-      <div class="left-column reveal reveal-left">
-
-        <!-- EDUCATION -->
-        <div class="education-block">
-          <h4><i class="fa-solid fa-graduation-cap"></i> Education</h4>
-          <div class="education">
-            <div class="education-item">
-              <span class="dot"></span>
-              <div class="education-content">
+      <div class="skills-grid">
+        <div class="skills-left reveal reveal-left">
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="tcard-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <h4>Education</h4>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
                 <small>2024 – 2027</small>
-                <p>
-                  Bachelor of Computer Applications<br>
-                  <span>Galgotias University, India</span>
-                </p>
+                <h5>Bachelor of Computer Applications</h5>
+                <span>Galgotias University, India</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="tcard-icon cert"><i class="fa-solid fa-certificate"></i></div>
+              <h4>Certification</h4>
+            </div>
+            <div class="timeline-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <small>Jul – Oct 2025</small>
+                <h5>E-Business</h5>
+                <span>NPTEL Online Certification</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- CERTIFICATIONS -->
-        <div class="education-block">
-          <h4><i class="fa-solid fa-certificate"></i> Certifications</h4>
-          <div class="education">
-            <div class="education-item">
-              <span class="dot"></span>
-              <div class="education-content">
-                <small>July – October 2025</small>
-                <p>
-                  E-Business<br>
-                  <span>NPTEL Online Certification</span>
-                </p>
+        <div class="skills-right reveal reveal-right">
+          <div class="skill-card">
+            <h4 class="skill-card-title"><i class="fa-solid fa-laptop-code"></i> Frontend Development</h4>
+
+            <div class="skill-bar" data-value="90">
+              <div class="sb-head">
+                <span><i class="fa-brands fa-html5" style="color:#e34f26"></i> HTML5</span>
+                <strong>90%</strong>
               </div>
+              <div class="sb-track"><div class="sb-fill"></div></div>
+            </div>
+
+            <div class="skill-bar" data-value="80">
+              <div class="sb-head">
+                <span><i class="fa-brands fa-css3-alt" style="color:#1572b6"></i> CSS3</span>
+                <strong>80%</strong>
+              </div>
+              <div class="sb-track"><div class="sb-fill"></div></div>
+            </div>
+
+            <div class="skill-bar" data-value="70">
+              <div class="sb-head">
+                <span><i class="fa-brands fa-js" style="color:#f7df1e"></i> JavaScript</span>
+                <strong>70%</strong>
+              </div>
+              <div class="sb-track"><div class="sb-fill"></div></div>
+            </div>
+
+            <div class="skill-bar" data-value="75">
+              <div class="sb-head">
+                <span><i class="fa-brands fa-react" style="color:#61dafb"></i> React.js</span>
+                <strong>75%</strong>
+              </div>
+              <div class="sb-track"><div class="sb-fill"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <h4 class="skill-card-title"><i class="fa-solid fa-pen-nib"></i> Design</h4>
+
+            <div class="skill-bar" data-value="95">
+              <div class="sb-head">
+                <span><i class="fa-brands fa-figma" style="color:#f24e1e"></i> Figma</span>
+                <strong>95%</strong>
+              </div>
+              <div class="sb-track"><div class="sb-fill"></div></div>
+            </div>
+
+            <div class="skill-bar" data-value="80">
+              <div class="sb-head">
+                <span><i class="fa-brands fa-wordpress" style="color:#21759b"></i> WordPress</span>
+                <strong>80%</strong>
+              </div>
+              <div class="sb-track"><div class="sb-fill"></div></div>
+            </div>
+
+            <div class="skill-bar" data-value="75">
+              <div class="sb-head">
+                <span><i class="fa-solid fa-palette" style="color:#9333ea"></i> Graphic Design</span>
+                <strong>75%</strong>
+              </div>
+              <div class="sb-track"><div class="sb-fill"></div></div>
             </div>
           </div>
         </div>
-
       </div>
+    </div>
+  </section>
 
-      <!-- RIGHT COLUMN -->
-      <div class="right-column reveal reveal-right">
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services section">
+    <div class="container">
+      <div class="section-tag reveal"><span>What I Do</span></div>
+      <h2 class="section-heading center reveal">Services I <em>Offer</em></h2>
+      <p class="section-sub center reveal">
+        End-to-end digital solutions — from pixel-perfect design to production-ready code.
+      </p>
 
-        <div class="skill-block">
-          <h4>Skills</h4>
-          <h5>Frontend Developer</h5>
-
-          <div class="skill" data-value="90">
-            <div class="skill-row">
-              <span><i class="fa-brands fa-html5"></i> HTML</span>
-              <span>90%</span>
-            </div>
-            <div class="bar"><span></span></div>
-          </div>
-
-          <div class="skill" data-value="80">
-            <div class="skill-row">
-              <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
-              <span>80%</span>
-            </div>
-            <div class="bar"><span></span></div>
-          </div>
-
-          <div class="skill" data-value="70">
-            <div class="skill-row">
-              <span><i class="fa-brands fa-js"></i> JavaScript</span>
-              <span>70%</span>
-            </div>
-            <div class="bar"><span></span></div>
-          </div>
-
-          <div class="skill" data-value="75">
-            <div class="skill-row">
-              <span><i class="fa-brands fa-react"></i> React.js</span>
-              <span>75%</span>
-            </div>
-            <div class="bar"><span></span></div>
-          </div>
+      <div class="services-grid">
+        <div class="service-card reveal delay-1" data-service="web">
+          <div class="sc-number">01</div>
+          <div class="sc-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Fast, scalable websites built with modern technologies and best practices.</p>
+          <button class="sc-btn" aria-label="Learn more about Web Development">
+            Learn More <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <div class="sc-line"></div>
         </div>
 
-        <div class="skill-block">
-          <h5>Designer</h5>
-
-          <div class="skill" data-value="95">
-            <div class="skill-row">
-              <span><i class="fa-brands fa-figma"></i> Figma</span>
-              <span>95%</span>
-            </div>
-            <div class="bar"><span></span></div>
-          </div>
-
-          <div class="skill" data-value="80">
-            <div class="skill-row">
-              <span><i class="fa-brands fa-wordpress"></i> WordPress</span>
-              <span>80%</span>
-            </div>
-            <div class="bar"><span></span></div>
-          </div>
-
-          <div class="skill" data-value="75">
-            <div class="skill-row">
-              <span><i class="fa-solid fa-palette"></i> Graphic Design</span>
-              <span>75%</span>
-            </div>
-            <div class="bar"><span></span></div>
-          </div>
+        <div class="service-card reveal delay-2" data-service="uiux">
+          <div class="sc-number">02</div>
+          <div class="sc-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>UI / UX Design</h3>
+          <p>User-centered designs that are both beautiful and intuitive to use.</p>
+          <button class="sc-btn" aria-label="Learn more about UI/UX Design">
+            Learn More <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <div class="sc-line"></div>
         </div>
 
+        <div class="service-card reveal delay-3" data-service="graphic">
+          <div class="sc-number">03</div>
+          <div class="sc-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3>Graphic Design</h3>
+          <p>Visual branding and creative design that makes your brand unforgettable.</p>
+          <button class="sc-btn" aria-label="Learn more about Graphic Design">
+            Learn More <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <div class="sc-line"></div>
+        </div>
+
+        <div class="service-card reveal delay-4" data-service="seo">
+          <div class="sc-number">04</div>
+          <div class="sc-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <h3>SEO Optimization</h3>
+          <p>Strategic optimization to improve visibility and grow organic traffic.</p>
+          <button class="sc-btn" aria-label="Learn more about SEO Optimization">
+            Learn More <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <div class="sc-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES MODAL -->
+  <div class="modal-backdrop" id="serviceModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-img">
+        <img id="modalImg" src="" alt="" />
       </div>
 
+      <div class="modal-label" id="modalLabel"></div>
+
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <ul id="modalList" class="modal-list"></ul>
     </div>
   </div>
-</section>
-<!-- ================= SKILLS-SECTION ENDS HERE ================= -->
 
-<!-- ================= SERVICES-SECTION STARTS HERE ================= -->
-<section id="servicesSection" class="services-section">
+  <!-- WHY HIRE ME -->
+  <section id="highlights" class="highlights section">
+    <div class="container">
+      <div class="section-tag reveal"><span>Why Hire Me</span></div>
+      <h2 class="section-heading center reveal">What Sets Me <em>Apart</em></h2>
 
-  <div class="container">
-    <h2 class="services-title reveal">Services</h2>
-    <p class="services-subtitle reveal">
-      Creating user-centered designs and high-performance digital solutions.
-    </p>
+      <div class="highlights-grid">
+        <div class="hl-card reveal delay-1">
+          <div class="hl-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>Clean Code</h3>
+          <p>Maintainable, well-structured code following modern development standards and patterns.</p>
+        </div>
 
-    <div class="services-container">
+        <div class="hl-card reveal delay-2">
+          <div class="hl-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <h3>Responsive Design</h3>
+          <p>Pixel-perfect layouts that look stunning on every screen size and device.</p>
+        </div>
 
-      <div class="service-card reveal delay-1" data-service="web">
-        <div class="icon"><i class="fa-solid fa-code"></i></div>
-        <h3>Web Development</h3>
-        <button class="services-learn-link" type="button">Learn More</button>
+        <div class="hl-card reveal delay-3">
+          <div class="hl-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Performance First</h3>
+          <p>Optimized websites that load fast and deliver smooth experiences across all devices.</p>
+        </div>
+
+        <div class="hl-card reveal delay-4">
+          <div class="hl-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>Problem Solver</h3>
+          <p>Creative thinker who transforms complex challenges into elegant digital solutions.</p>
+        </div>
       </div>
 
-      <div class="service-card reveal delay-2" data-service="uiux">
-        <div class="icon"><i class="fa-solid fa-layer-group"></i></div>
-        <h3>UI / UX Design</h3>
-        <button class="services-learn-link" type="button">Learn More</button>
+      <div class="counters-strip reveal">
+        <div class="counter-item">
+          <h3 class="counter" data-target="4">0</h3>
+          <span>Projects Built</span>
+        </div>
+        <div class="counter-item">
+          <h3 class="counter" data-target="10">0</h3>
+          <span>Technologies</span>
+        </div>
+        <div class="counter-item">
+          <h3 class="counter" data-target="2">0</h3>
+          <span>Years Learning</span>
+        </div>
+        <div class="counter-item">
+          <h3 class="counter" data-target="100">0</h3>
+          <span>% Commitment</span>
+        </div>
       </div>
-
-      <div class="service-card reveal delay-3" data-service="graphic">
-        <div class="icon"><i class="fa-solid fa-palette"></i></div>
-        <h3>Graphic Design</h3>
-        <button class="services-learn-link" type="button">Learn More</button>
-      </div>
-
-      <div class="service-card reveal delay-4" data-service="seo">
-        <div class="icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-        <h3>SEO Optimization</h3>
-        <button class="services-learn-link" type="button">Learn More</button>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- overlay -->
-<div id="servicesOverlay" class="services-overlay">
-  <div class="services-overlay-card">
-
-    <!-- Close button on very top -->
-    <button id="servicesCloseBtn" class="services-close-btn" aria-label="Close">
-      <span>&times;</span>
-    </button>
-
-    <div class="services-overlay-header">
-      <h3 id="servicesOverlayTitle" class="services-overlay-title"></h3>
-    </div>
-
-    <div id="servicesOverlayContent" class="services-overlay-content"></div>
-
-  </div>
-</div>
-<!-- ================= SERVICES-SECTION ENDS HERE ================= -->
-
-<!-- ================= HIGHLIGHTS / ACHIEVEMENTS SECTION STARTS HERE ================= -->
-<section id="highlights" class="highlights-section">
-
-  <div class="container">
-
-    <h2 class="section-title reveal">Why Hire Me</h2>
-
-    <p class="highlights-subtitle">
-      Passionate about building modern web experiences with strong
-      problem-solving skills and a focus on clean, scalable code.
-    </p>
-
-    <div class="highlights-grid">
-
-      <div class="highlight-card reveal delay-1">
-        <i class="fa-solid fa-code"></i>
-        <h3>Clean Code</h3>
-        <p>
-          Writing maintainable and scalable code following modern
-          development standards and best practices.
-        </p>
-      </div>
-
-      <div class="highlight-card reveal delay-2">
-        <i class="fa-solid fa-layer-group"></i>
-        <h3>Modern UI</h3>
-        <p>
-          Creating elegant user interfaces with strong UX principles
-          and responsive design.
-        </p>
-      </div>
-
-      <div class="highlight-card reveal delay-3">
-        <i class="fa-solid fa-bolt"></i>
-        <h3>Performance</h3>
-        <p>
-          Optimized websites that load fast and deliver smooth user
-          experiences across all devices.
-        </p>
-      </div>
-
-      <div class="highlight-card reveal delay-4">
-        <i class="fa-solid fa-lightbulb"></i>
-        <h3>Problem Solver</h3>
-        <p>
-          Passionate about solving real-world problems through efficient
-          digital solutions.
-        </p>
-      </div>
-
-    </div>
-
-
-    <!-- Stats -->
-    <div class="highlights-stats">
-
-      <div class="stat">
-        <h3>4+</h3>
-        <p>Projects Built</p>
-      </div>
-
-      <div class="stat">
-        <h3>10+</h3>
-        <p>Technologies Learned</p>
-      </div>
-
-      <div class="stat">
-        <h3>2+</h3>
-        <p>Years Learning</p>
-      </div>
-
-      <div class="stat">
-        <h3>100%</h3>
-        <p>Commitment</p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-<!-- ================= HIGHLIGHTS / ACHIEVEMENTS SECTION ENDS HERE ================= -->
-
-<!-- ================= MY PORTFOLIO-SECTION STARTS HERE ================= -->
-<section id="portfolio" class="portfolio-section">
-  <div class="container">
-
-    <h1 class="portfolio-title">My Portfolio</h1>
-
-    <div class="portfolio-intro">
-      <h2>Featured Projects</h2>
-      <p>Explore two premium responsive websites crafted using clean HTML, CSS & JavaScript.</p>
-    </div>
-
-    <div class="projects-showcase">
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="portfolio section">
+    <div class="container">
+      <div class="section-tag reveal"><span>My Work</span></div>
+      <h2 class="section-heading center reveal">Featured <em>Projects</em></h2>
+      <p class="section-sub center reveal">
+        Hand-crafted websites built with clean HTML, CSS &amp; JavaScript — responsive and production-ready.
+      </p>
 
       <!-- PROJECT 1 -->
-      <div class="portfolio-project">
-        <div class="project-info reveal reveal-left">
-          <span class="project-label">BARBERSHOP WEBSITE</span>
-          <h3>LeeHairCut Website</h3>
-          <p>
-            A stylish modern barber website with premium UI, service sections,
-            booking experience, animations and fully responsive layout.
-          </p>
-
-          <div class="project-tech">
-            <span class="tech"><i class="fa-brands fa-html5"></i> HTML5</span>
-            <span class="tech"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-            <span class="tech"><i class="fa-brands fa-js"></i> JavaScript</span>
+      <article class="project-row reveal">
+        <div class="project-content">
+          <div class="project-label">
+            <span class="project-num">01</span>
+            <span class="project-cat">Barbershop Website</span>
           </div>
-
-          <a href="https://leehaircut-barbershop.vercel.app"
-             class="live-btn blue-btn"
-             target="_blank">
-            Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
+          <h3 class="project-title">LeeHairCut</h3>
+          <p class="project-desc">
+            A stylish, modern barber website featuring premium UI, animated service
+            sections, a booking experience, and a fully responsive layout.
+          </p>
+          <div class="project-tags">
+            <span><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://leehaircut-barbershop.vercel.app" target="_blank" class="btn-primary">
+              Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
         </div>
-
-        <div class="project-preview left-preview reveal reveal-right">
-          <img src="imgs/LeeHairCut-Screenshot.png" alt="LeeHairCut Website">
+        <div class="project-visual">
+          <div class="project-screen">
+            <img src="imgs/LeeHairCut-Screenshot.png" alt="LeeHairCut Website" />
+          </div>
+          <div class="project-glow"></div>
         </div>
-      </div>
+      </article>
 
       <!-- PROJECT 2 -->
-      <div class="portfolio-project reverse">
-        <div class="project-preview right-preview reveal reveal-left">
-          <img src="imgs/LCR-Screenshot.png" alt="Lee Car Rental Website">
+      <article class="project-row project-row--reverse reveal">
+        <div class="project-content">
+          <div class="project-label">
+            <span class="project-num">02</span>
+            <span class="project-cat">Car Rental Platform</span>
+          </div>
+          <h3 class="project-title">Lee Car Rental</h3>
+          <p class="project-desc">
+            Premium car rental platform with a booking system, fleet showcase,
+            elegant animations, and a customer-first UX approach.
+          </p>
+          <div class="project-tags">
+            <span><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://lee-car-rental.vercel.app" target="_blank" class="btn-primary">
+              Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="project-screen">
+            <img src="imgs/LCR-Screenshot.png" alt="Lee Car Rental Website" />
+          </div>
+          <div class="project-glow project-glow--2"></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials" class="testimonials section">
+    <div class="container">
+      <div class="section-tag reveal"><span>Kind Words</span></div>
+      <h2 class="section-heading center reveal">What People <em>Say</em></h2>
+
+      <div class="testi-grid">
+        <div class="testi-card reveal delay-1">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"Simoyi delivered an outstanding website for our barbershop. Clean design, fast loading, and exactly what we envisioned."</p>
+          <div class="testi-author">
+            <div class="testi-avatar"><span>NM</span></div>
+            <div>
+              <strong>Nathan Mangoma</strong>
+              <small>Barbershop Owner</small>
+            </div>
+          </div>
         </div>
 
-        <div class="project-info reveal reveal-right">
-          <span class="project-label blue">CAR RENTAL WEBSITE</span>
-          <h3>Lee Car Rental (LCR)</h3>
-          <p>
-            Premium car rental platform featuring booking system, fleet showcase,
-            responsive design, elegant animations and customer-first UX.
-          </p>
+        <div class="testi-card reveal delay-2">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"Professional, creative, and incredibly detail-oriented. The UI/UX work exceeded all my expectations. Highly recommended!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar"><span>DB</span></div>
+            <div>
+              <strong>David Bisimwa</strong>
+              <small>Startup Founder</small>
+            </div>
+          </div>
+        </div>
 
-          <div class="project-tech">
-            <span class="tech"><i class="fa-brands fa-html5"></i> HTML5</span>
-            <span class="tech"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-            <span class="tech"><i class="fa-brands fa-js"></i> JavaScript</span>
+        <div class="testi-card reveal delay-3">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>"Great attention to detail, responsive design, and delivered on time. The car rental platform looks absolutely premium."</p>
+          <div class="testi-author">
+            <div class="testi-avatar"><span>SM</span></div>
+            <div>
+              <strong>Simon Machemedze</strong>
+              <small>Business Owner</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta section">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <div class="cta-badge-sm">
+          <i class="fa-solid fa-circle-check"></i> Open to work
+        </div>
+        <h2>Have a project in mind?<br><em>Let's build it together.</em></h2>
+        <p>I design and develop clean, fast, and professional web experiences that convert visitors into customers.</p>
+        <div class="cta-actions">
+          <a href="#contact" class="btn-primary">Start a Project <i class="fa-solid fa-rocket"></i></a>
+          <a href="#portfolio" class="btn-ghost">See My Work <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-tag reveal"><span>Get In Touch</span></div>
+      <h2 class="section-heading center reveal">Let's Start a <em>Conversation</em></h2>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal reveal-left">
+          <h3>Ready to bring your<br>ideas to life?</h3>
+          <p>Whether you have a project in mind or just want to chat about possibilities — my inbox is always open.</p>
+
+          <div class="contact-details">
+            <a href="mailto:leesimoyi@gmail.com" class="cd-item">
+              <div class="cd-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <small>Email</small>
+                <strong>leesimoyi@gmail.com</strong>
+              </div>
+            </a>
+            <a href="tel:+919773612594" class="cd-item">
+              <div class="cd-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <small>Phone</small>
+                <strong>+91 977 361 2594</strong>
+              </div>
+            </a>
+            <div class="cd-item">
+              <div class="cd-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <small>Location</small>
+                <strong>New Delhi, India</strong>
+              </div>
+            </div>
           </div>
 
-          <a href="https://lee-car-rental.vercel.app"
-             class="live-btn blue-btn"
-             target="_blank">
-            Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
+          <div class="contact-socials">
+            <a href="https://linkedin.com/in/leesimoyi" target="_blank" rel="noopener" class="cs-link" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/leesimoyi" target="_blank" rel="noopener" class="cs-link" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener" class="cs-link" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener" class="cs-link" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal reveal-right">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="user_name">Full Name</label>
+                <input type="text" id="user_name" name="user_name" placeholder="John Doe" required />
+              </div>
+              <div class="form-field">
+                <label for="user_email">Email Address</label>
+                <input type="email" id="user_email" name="user_email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project inquiry..." />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" id="sendBtn" class="btn-primary btn-full">
+              <span class="btn-text">Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#home" class="footer-logo">Sim<span>.</span></a>
+
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/leesimoyi" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/leesimoyi" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
-<!-- ================= MY PORTFOLIO-SECTION ENDS HERE ================= -->
-
-<!-- ================= WORK TOGETHER SECTION STARTS HERE ================= -->
-<section class="cta-section">
-  <div class="container">
-    <span class="cta-badge reveal">
-      <i class="fa-solid fa-star"></i>
-      Available for Freelance Projects
-    </span>
-    <h2 class="cta-title reveal">Let’s Build Something Amazing Together</h2>
-    <p class="cta-text reveal">
-      Have an idea, project, or business that needs a modern website?
-      I design and build clean, fast, and professional web experiences.
-    </p>
-
-    <div class="cta-buttons reveal">
-
-      <a href="#contact" class="cta-btn primary">
-        Start a Project
-        <i class="fa-solid fa-code"></i>
-      </a>
-
-      <a href="#portfolio" class="cta-btn secondary">
-        View My Work
-        <i class="fa-solid fa-arrow-right"></i>
-      </a>
-
-    </div>
-  </div>
-</section>
-<!-- ================= WORK TOGETHER SECTION ENDS HERE ================= -->
-
-<!-- ================= CONTACT-SECTION STARTS HERE ================= -->
-<section id="contact" class="contact-wrapper">
-  <div class="container">
-  <h1 class="contact-title reveal">Contact Us</h1>
-  <div class="contact-heading-divider"></div>
-
-  <div class="contact-card">
-
-    <div class="contact-form reveal reveal-left">
-      <h2>Get in Touch!</h2>
-      <p class="subtitle">Let’s build something amazing together</p>
-      <form id="contactForm">
-
-        <input type="text" name="user_name" placeholder="Your Name" required>
-
-        <input type="email" name="user_email" placeholder="Your Email" required>
-
-        <input type="text" name="subject" placeholder="Subject">
-
-        <textarea name="message" placeholder="Your Message" required></textarea>
-
-        <button type="submit" id="sendBtn">
-            Send Message <i class="fa-solid fa-paper-plane"></i>
-        </button>
-
-      </form>
-    </div>
-
-    <div class="contact-info reveal reveal-right">
-      <img src="imgs/imag.svg" alt="Illustration">
-      <ul>
-        <li><i class="fa-solid fa-location-dot"></i> New Delhi, India</li>
-        <li><i class="fa-solid fa-phone"></i> <a href="tel:+919773612594">+91 977 361 2594</a></li>
-        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:leesimoyi@gmail.com">leesimoyi@gmail.com</a></li>
-        <li><i class="fa-solid fa-headset"></i> 24/7 Support</li>
-      </ul>
-    </div>
-
-    <div class="contact-socials reveal reveal-right">
-      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="Visit Facebook">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="instagram" aria-label="Visit Instagram">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/leesimoyi" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="Visit LinkedIn">
-        <i class="fa-brands fa-linkedin-in"></i>
-      </a>
-      <a href="https://github.com/leesimoyi" target="_blank" rel="noopener noreferrer" class="github" aria-label="Visit GitHub">
-        <i class="fa-brands fa-github"></i>
-      </a>
-    </div>
-
-  </div>
-  </div>
-</section>
-
-<div id="toast" class="toast">
-
-  <div class="toast-icon">
-    <i class="fa-solid fa-circle-check"></i>
-  </div>
-
-  <div class="toast-content">
-    <strong id="toastTitle">Message Sent</strong>
-    <p id="toastMessage"></p>
-  </div>
-
-  <div class="toast-progress"></div>
-
-</div>
-<!-- ================= CONTACT-SECTION ENDS HERE ================= -->
-
-<!-- ===== Scroll Indicator ===== -->
-<div class="scroll-indicator" id="scrollIndicator">
-  <i class="fa-solid fa-chevron-up"></i>
-</div>
-
-
-<!-- ================= FOOTER-SECTION STARTS HERE ================= -->
-<footer class="footer">
-  <div class="container">
-
-    <div class="footer-top">
-      <a href="#home" class="footer-logo">Simoyi</a>
-
-      <ul class="footer-nav">
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#servicesSection">What I Do</a></li>
-        <li><a href="#highlights">Why Hire Me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <div class="footer-socials">
-        <a href="https://facebook.com" target="_blank">
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <a href="https://instagram.com" target="_blank">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://linkedin.com/in/leesimoyi" target="_blank">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/leesimoyi" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
+      <div class="footer-bottom">
+        <p>© 2026 Simoyi Lee. Designed & Built with <i class="fa-solid fa-heart"></i> in New Delhi.</p>
       </div>
-
     </div>
+  </footer>
 
-    <hr>
-
-    <p class="footer-bottom">
-      © 2026 Lee Simoyi (Frontend Developer). All Rights Reserved.
-    </p>
-
+  <!-- TOAST MESSAGE -->
+  <div class="toast" id="toast">
+    <div class="toast-inner">
+      <div class="toast-icon">
+        <i class="fa-solid fa-circle-check" id="toastIcon"></i>
+      </div>
+      <div class="toast-body">
+        <strong id="toastTitle">Message Sent!</strong>
+        <p id="toastMsg"></p>
+      </div>
+    </div>
+    <div class="toast-progress" id="toastProgress"></div>
   </div>
-</footer>
 
-<!-- ================= FOOTER-SECTION ENDS HERE ================= -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script src="script.js"></script>
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
