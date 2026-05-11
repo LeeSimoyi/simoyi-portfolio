@@ -23,7 +23,7 @@ A beautifully crafted <strong>Personal Portfolio Website</strong> built with <st
 ## 📸 Demo Screenshot
 
 <p align="center">
-  <img src="ReadMe image/ReadMe.png" alt="Portfolio Preview" width="100%" />
+  <img src="imgs/ReadMe.png" alt="Portfolio Preview" width="100%" />
 </p>
 
 ---
