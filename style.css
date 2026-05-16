@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
 
 /* ==========================================================================
-   1. DESIGN TOKENS
+   DESIGN TOKENS
    ========================================================================== */
 :root {
   /* Brand */
@@ -85,7 +85,7 @@ html.dark {
 }
 
 /* ==========================================================================
-   2. RESET & BASE
+   RESET & BASE
    ========================================================================== */
 *, *::before, *::after {
   margin: 0;
@@ -119,7 +119,7 @@ ul           { list-style: none; }
 button       { font-family: inherit; cursor: pointer; border: none; background: none; }
 
 /* ==========================================================================
-   3. TYPOGRAPHY
+   TYPOGRAPHY
    ========================================================================== */
 h1, h2, h3, h4, h5 {
   font-family: var(--font-display);
@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5 {
 .section-tag.center { justify-content: center; }
 
 /* ==========================================================================
-   4. LAYOUT
+   LAYOUT
    ========================================================================== */
 .container {
   width: 100%;
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ==========================================================================
-   5. BUTTONS
+   BUTTONS
    ========================================================================== */
 .btn-primary {
   display: inline-flex;
@@ -291,7 +291,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ==========================================================================
-   6. CUSTOM CURSOR
+   CUSTOM CURSOR
    ========================================================================== */
 .cursor,
 .cursor-follower {
@@ -327,7 +327,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ==========================================================================
-   7. PAGE LOADER
+   PAGE LOADER
    ========================================================================== */
 .page-loader {
   position: fixed;
@@ -373,7 +373,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ==========================================================================
-   8. SCROLL REVEAL
+   SCROLL REVEAL
    ========================================================================== */
 .reveal {
   opacity: 0;
@@ -396,7 +396,7 @@ h1, h2, h3, h4, h5 {
 .reveal.delay-4 { transition-delay: 0.4s; }
 
 /* ==========================================================================
-   9. NAVBAR
+   NAVBAR
    ========================================================================== */
 .nav-overlay {
   position: fixed;
@@ -616,7 +616,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   10. HERO
+   HERO
    ========================================================================== */
 .hero {
   position: relative;
@@ -855,7 +855,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
   50%       { transform: translateY(-8px); }
 }
 
-/* ── Scroll indicator ── */
+/* Scroll indicator */
 .hero-scroll {
   position: absolute;
   bottom: 24px; left: 50%;
@@ -905,7 +905,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   11. MARQUEE STRIP
+   MARQUEE STRIP
    ========================================================================== */
 .marquee-strip {
   overflow: hidden;
@@ -941,7 +941,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   12. ABOUT
+   ABOUT
    ========================================================================== */
 .about { background: var(--clr-surface); }
 
@@ -1053,7 +1053,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   13. SKILLS
+   SKILLS
    ========================================================================== */
 .skills { background: var(--clr-bg); }
 
@@ -1161,7 +1161,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   14. SERVICES
+   SERVICES
    ========================================================================== */
 .services { background: var(--clr-surface); }
 
@@ -1244,7 +1244,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 .service-card:hover .sc-line { width: 100%; }
 
 /* ==========================================================================
-   15. SERVICES MODAL
+   SERVICES MODAL
    ========================================================================== */
 .modal-backdrop {
   position: fixed; inset: 0;
@@ -1375,7 +1375,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   16. HIGHLIGHTS
+   HIGHLIGHTS
    ========================================================================== */
 .highlights { background: var(--clr-bg); }
 
@@ -1439,7 +1439,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 .counter-item span { font-size: var(--fz-sm); color: var(--clr-text-3); }
 
 /* ==========================================================================
-   17. PORTFOLIO
+   PORTFOLIO
    ========================================================================== */
 .portfolio { background: var(--clr-surface); }
 
@@ -1561,7 +1561,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   18. TESTIMONIALS
+   TESTIMONIALS
    ========================================================================== */
 .testimonials { background: var(--clr-bg); }
 
@@ -1617,7 +1617,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 .testi-author small  { color: var(--clr-text-3); font-size: var(--fz-xs); }
 
 /* ==========================================================================
-   19. CTA
+   CTA
    ========================================================================== */
 .cta { background: var(--clr-surface); }
 
@@ -1698,7 +1698,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   20. CONTACT
+   CONTACT
    ========================================================================== */
 .contact { background: var(--clr-bg); }
 
@@ -1826,7 +1826,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 .form-field textarea { resize: vertical; min-height: 120px; }
 
-/* ── Form validation states ── */
+/* Form validation states */
 .form-field input.input--error,
 .form-field textarea.input--error {
   border-color: #ef4444 !important;
@@ -1859,7 +1859,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   21. FOOTER
+   FOOTER
    ========================================================================== */
 .footer {
   background: var(--clr-text-1);
@@ -1920,8 +1920,7 @@ html.dark .footer { background: #060e0b; }
 .footer-bottom i  { color: var(--clr-accent); font-size: 0.7rem; }
 
 /* ==========================================================================
-   ULTRA PREMIUM MODERN TOAST NOTIFICATION
-   Crystal Clear • Visible • Elegant • Smooth • Luxury UI
+   TOAST NOTIFICATION
    ========================================================================== */
 
 .toast{
@@ -1934,31 +1933,21 @@ html.dark .footer { background: #060e0b; }
   width: min(410px, calc(100vw - 32px));
   padding: 18px;
   border-radius: 20px;
-
   background: #ffffff;
   border: 1px solid rgba(0,0,0,.06);
-
-  box-shadow:
-    0 22px 55px rgba(0,0,0,.14),
-    0 10px 24px rgba(0,0,0,.08);
-
+  box-shadow:0 22px 55px rgba(0,0,0,.14),0 10px 24px rgba(0,0,0,.08);
   overflow: hidden;
   z-index: 9999;
-
   opacity: 0;
   transform: translateY(140px) scale(.92);
-  transition:
-    transform .55s cubic-bezier(.16,1,.3,1),
-    opacity .4s ease;
+  transition:transform .55s cubic-bezier(.16,1,.3,1),opacity .4s ease;
 }
 
-/* show */
 .toast.show{
   opacity: 1;
   transform: translateY(0) scale(1);
 }
 
-/* top premium line */
 .toast::before{
   content:"";
   position:absolute;
@@ -1969,7 +1958,6 @@ html.dark .footer { background: #060e0b; }
   background: linear-gradient(90deg,#14b866,#22c55e,#14b866);
 }
 
-/* subtle glow */
 .toast::after{
   content:"";
   position:absolute;
@@ -2008,25 +1996,18 @@ html.dark .footer { background: #060e0b; }
   height:52px;
   flex-shrink:0;
   border-radius:16px;
-
   display:flex;
   align-items:center;
   justify-content:center;
-
   background: rgba(20,184,102,.10);
   color: var(--toast-accent);
-
   font-size:1.2rem;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.7),
-    0 8px 18px rgba(20,184,102,.12);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 8px 18px rgba(20,184,102,.12);
 }
 
 .toast--error .toast-icon{
   background: rgba(239,68,68,.10);
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.7),
-    0 8px 18px rgba(239,68,68,.12);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 8px 18px rgba(239,68,68,.12);
 }
 
 /* text */
@@ -2079,7 +2060,7 @@ html.dark .footer { background: #060e0b; }
 }
 
 /* ===================================================
-   CLOSE BUTTON (optional)
+   CLOSE BUTTON
    =================================================== */
 .toast-close{
   position:absolute;
@@ -2090,13 +2071,10 @@ html.dark .footer { background: #060e0b; }
   border:none;
   border-radius:10px;
   cursor:pointer;
-
   background:#f8fafc;
   color:#6b7280;
-
   display:grid;
   place-items:center;
-
   transition:.25s ease;
 }
 
@@ -2206,10 +2184,6 @@ body.dark .toast-close:hover{
   }
 }
 
-
-/* ==========================================================================
-   24. RESPONSIVE
-   ========================================================================== */
 @media (max-width: 1100px) {
   .services-grid   { grid-template-columns: repeat(2, 1fr); }
   .highlights-grid { grid-template-columns: repeat(2, 1fr); }
