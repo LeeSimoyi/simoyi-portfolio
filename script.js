@@ -7,18 +7,7 @@
   "use strict";
 
   /* ==========================================================================
-     1. PAGE LOADER
-     ========================================================================== */
-  const loader = document.getElementById("pageLoader");
-
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-      loader?.classList.add("hidden");
-    }, 2000);
-  });
-
-  /* ==========================================================================
-     2. DARK MODE TOGGLE
+     1. DARK MODE TOGGLE
      ========================================================================== */
   const themeBtn = document.getElementById("themeBtn");
   const htmlEl   = document.documentElement;
@@ -33,7 +22,7 @@
   });
 
   /* ==========================================================================
-     3. NAVBAR
+     2. NAVBAR
      ========================================================================== */
   const navbar      = document.getElementById("navbar");
   const hamburger   = document.getElementById("hamburger");
@@ -83,7 +72,7 @@
   handleScroll();
 
   /* ==========================================================================
-     4. CUSTOM CURSOR
+     3. CUSTOM CURSOR
      ========================================================================== */
   const cursor         = document.getElementById("cursor");
   const cursorFollower = document.getElementById("cursorFollower");
@@ -122,7 +111,7 @@
   }
 
   /* ==========================================================================
-     5. SCROLL REVEAL
+     4. SCROLL REVEAL
      ========================================================================== */
   const revealEls = document.querySelectorAll(".reveal");
 
@@ -138,7 +127,7 @@
   revealEls.forEach(el => revealObserver.observe(el));
 
   /* ==========================================================================
-     6. SKILL BARS
+     5. SKILL BARS
      ========================================================================== */
   const skillBars = document.querySelectorAll(".skill-bar");
 
@@ -158,7 +147,7 @@
   skillBars.forEach(bar => barObserver.observe(bar));
 
   /* ==========================================================================
-     7. ANIMATED COUNTERS
+     6. ANIMATED COUNTERS
      ========================================================================== */
   const counters = document.querySelectorAll(".counter");
 
@@ -187,7 +176,7 @@
   counters.forEach(c => countObserver.observe(c));
 
   /* ==========================================================================
-     8. SERVICES MODAL
+     7. SERVICES MODAL
      ========================================================================== */
   const serviceData = {
     web: {
@@ -262,7 +251,7 @@
   });
 
   /* ==========================================================================
-     9. SCROLL TO TOP BUTTON
+     8. SCROLL TO TOP BUTTON
      ========================================================================== */
   const scrollTopBtn = document.getElementById("scrollTop");
 
@@ -275,7 +264,7 @@
   });
 
   /* ==========================================================================
-     10. CONTACT FORM — validation + EmailJS
+     9. CONTACT FORM — validation + EmailJS
      ========================================================================== */
   emailjs.init("5IkvlnetHiJWb9jGd");
 
@@ -289,10 +278,9 @@
 
   /* ── Toast helper ── */
   const showToast = (title, message, isError = false) => {
-    // Reset progress animation
     if (toastProg) {
       toastProg.style.animation = "none";
-      void toastProg.offsetWidth; // force reflow
+      void toastProg.offsetWidth;
       toastProg.style.animation  = "";
     }
 
@@ -346,7 +334,6 @@
     const messageEl = getField("message");
     let valid = true;
 
-    // Name
     if (!nameEl.value.trim()) {
       setError(nameEl, "Please enter your full name.");
       valid = false;
@@ -354,7 +341,6 @@
       setValid(nameEl);
     }
 
-    // Email
     if (!emailEl.value.trim()) {
       setError(emailEl, "Please enter your email address.");
       valid = false;
@@ -365,7 +351,6 @@
       setValid(emailEl);
     }
 
-    // Message
     if (!messageEl.value.trim()) {
       setError(messageEl, "Please write a message before sending.");
       valid = false;
@@ -379,7 +364,6 @@
     return valid;
   };
 
-  // Live: clear error as user types; set valid on blur
   ["user_name", "user_email", "message"].forEach(id => {
     const el = getField(id);
     if (!el) return;
@@ -399,7 +383,6 @@
     e.preventDefault();
 
     if (!validateForm()) {
-      // Shake the button to signal failure
       sendBtn.style.animation = "none";
       void sendBtn.offsetWidth;
       sendBtn.style.animation = "btnShake 0.4s var(--ease)";
@@ -442,7 +425,7 @@
   });
 
   /* ==========================================================================
-     11. SMOOTH MARQUEE — pause on hover
+     10. SMOOTH MARQUEE — pause on hover
      ========================================================================== */
   const marqueeTrack = document.querySelector(".marquee-track");
   if (marqueeTrack) {
