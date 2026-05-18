@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
 
 /* ==========================================================================
-   1. DESIGN TOKENS
+   DESIGN TOKENS
    ========================================================================== */
 :root {
   /* Brand */
@@ -85,7 +85,7 @@ html.dark {
 }
 
 /* ==========================================================================
-   2. RESET & BASE
+   RESET & BASE
    ========================================================================== */
 *, *::before, *::after {
   margin: 0;
@@ -113,13 +113,25 @@ body {
 
 body.no-scroll { overflow: hidden; }
 
-a            { text-decoration: none; color: inherit; }
-img, svg     { max-width: 100%; height: auto; display: block; }
-ul           { list-style: none; }
-button       { font-family: inherit; cursor: pointer; border: none; background: none; }
+a { 
+   text-decoration: none; 
+   color: inherit; 
+}
+img, svg { 
+   max-width: 100%; 
+   height: auto; 
+   display: block; 
+}
+ul { list-style: none; }
+button { 
+   font-family: inherit; 
+   cursor: pointer; 
+   border: none; 
+   background: none; 
+}
 
 /* ==========================================================================
-   3. TYPOGRAPHY
+   TYPOGRAPHY
    ========================================================================== */
 h1, h2, h3, h4, h5 {
   font-family: var(--font-display);
@@ -134,7 +146,10 @@ h1, h2, h3, h4, h5 {
   letter-spacing: -0.03em;
   margin-bottom: var(--sp-sm);
 }
-.section-heading em  { font-style: normal; color: var(--clr-accent); }
+.section-heading em { 
+   font-style: normal; 
+   color: var(--clr-accent); 
+}
 .section-heading.center { text-align: center; }
 
 .section-sub {
@@ -144,7 +159,10 @@ h1, h2, h3, h4, h5 {
   margin-bottom: var(--sp-xl);
   line-height: 1.75;
 }
-.section-sub.center { text-align: center; margin-inline: auto; }
+.section-sub.center { 
+   text-align: center; 
+   margin-inline: auto; 
+}
 
 .section-tag {
   display: flex;
@@ -170,7 +188,7 @@ h1, h2, h3, h4, h5 {
 .section-tag.center { justify-content: center; }
 
 /* ==========================================================================
-   4. LAYOUT
+   LAYOUT
    ========================================================================== */
 .container {
   width: 100%;
@@ -185,7 +203,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ==========================================================================
-   5. BUTTONS
+   BUTTONS
    ========================================================================== */
 .btn-primary {
   display: inline-flex;
@@ -291,7 +309,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ==========================================================================
-   6. CUSTOM CURSOR
+   CUSTOM CURSOR
    ========================================================================== */
 .cursor,
 .cursor-follower {
@@ -316,8 +334,7 @@ h1, h2, h3, h4, h5 {
   border: 1.5px solid var(--clr-accent);
   opacity: 0.45;
   transform: translate(-50%, -50%);
-  transition: transform 0.22s var(--ease), opacity 0.22s var(--ease),
-              width 0.22s var(--ease-spring), height 0.22s var(--ease-spring);
+  transition: transform 0.22s var(--ease), opacity 0.22s var(--ease),width 0.22s var(--ease-spring), height 0.22s var(--ease-spring);
 }
 .cursor-follower.hover {
   width: 52px; height: 52px;
@@ -327,7 +344,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ==========================================================================
-   7. SCROLL REVEAL
+   SCROLL REVEAL
    ========================================================================== */
 .reveal {
   opacity: 0;
@@ -350,7 +367,7 @@ h1, h2, h3, h4, h5 {
 .reveal.delay-4 { transition-delay: 0.4s; }
 
 /* ==========================================================================
-   8. NAVBAR
+   NAVBAR
    ========================================================================== */
 .nav-overlay {
   position: fixed;
@@ -362,7 +379,10 @@ h1, h2, h3, h4, h5 {
   transition: opacity 0.35s var(--ease), visibility 0.35s var(--ease);
   z-index: 1900;
 }
-.nav-overlay.active { opacity: 1; visibility: visible; }
+.nav-overlay.active { 
+   opacity: 1; 
+   visibility: visible; 
+}
 
 .navbar {
   position: fixed;
@@ -438,8 +458,7 @@ html.dark .navbar:not(.scrolled) { background: rgba(12,22,18,0.4); }
   color: var(--clr-text-1);
   display: flex; align-items: center; justify-content: center;
   font-size: 1.1rem;
-  transition: background 0.2s var(--ease), color 0.2s var(--ease),
-              border-color 0.2s var(--ease), transform 0.25s var(--ease-spring);
+  transition: background 0.2s var(--ease), color 0.2s var(--ease),border-color 0.2s var(--ease), transform 0.25s var(--ease-spring);
   flex-shrink: 0;
 }
 .nav-close-btn:hover {
@@ -463,8 +482,7 @@ html.dark .navbar:not(.scrolled) { background: rgba(12,22,18,0.4); }
   border: 1px solid var(--clr-border);
   color: var(--clr-text-2);
   font-size: 0.85rem;
-  transition: background 0.25s var(--ease), color 0.25s var(--ease),
-              transform 0.25s var(--ease-spring);
+  transition: background 0.25s var(--ease), color 0.25s var(--ease),transform 0.25s var(--ease-spring);
 }
 .theme-btn:hover {
   background: var(--clr-accent-glow);
@@ -570,7 +588,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   9. HERO
+   HERO
    ========================================================================== */
 .hero {
   position: relative;
@@ -775,7 +793,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
   50%       { transform: translateY(-8px); }
 }
 
-/* ── Scroll indicator ── */
+/* Scroll indicator */
 .hero-scroll {
   position: absolute;
   bottom: 24px; left: 50%;
@@ -824,7 +842,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   10. MARQUEE STRIP
+   MARQUEE STRIP
    ========================================================================== */
 .marquee-strip {
   overflow: hidden;
@@ -860,7 +878,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   11. ABOUT
+   ABOUT
    ========================================================================== */
 .about { background: var(--clr-surface); }
 
@@ -972,7 +990,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   12. SKILLS
+   SKILLS
    ========================================================================== */
 .skills { background: var(--clr-bg); }
 
@@ -1080,7 +1098,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   13. SERVICES
+   SERVICES
    ========================================================================== */
 .services { background: var(--clr-surface); }
 
@@ -1097,8 +1115,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
   padding: var(--sp-lg) var(--sp-md);
   position: relative;
   overflow: hidden;
-  transition: transform 0.35s var(--ease-spring), box-shadow 0.35s var(--ease),
-              border-color 0.35s var(--ease);
+  transition: transform 0.35s var(--ease-spring), box-shadow 0.35s var(--ease),border-color 0.35s var(--ease);
   display: flex;
   flex-direction: column;
   gap: var(--sp-sm);
@@ -1126,8 +1143,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
   color: var(--clr-accent);
   display: flex; align-items: center; justify-content: center;
   font-size: 1.3rem;
-  transition: background 0.3s var(--ease), color 0.3s var(--ease),
-              transform 0.3s var(--ease-spring);
+  transition: background 0.3s var(--ease), color 0.3s var(--ease),transform 0.3s var(--ease-spring);
 }
 .service-card:hover .sc-icon {
   background: var(--clr-accent);
@@ -1163,7 +1179,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 .service-card:hover .sc-line { width: 100%; }
 
 /* ==========================================================================
-   14. SERVICES MODAL
+   SERVICES MODAL
    ========================================================================== */
 .modal-backdrop {
   position: fixed; inset: 0;
@@ -1209,8 +1225,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
   color: var(--clr-text-2);
   display: flex; align-items: center; justify-content: center;
   font-size: 0.95rem;
-  transition: background 0.2s var(--ease), color 0.2s var(--ease),
-              transform 0.25s var(--ease-spring), border-color 0.2s var(--ease);
+  transition: background 0.2s var(--ease), color 0.2s var(--ease),transform 0.25s var(--ease-spring), border-color 0.2s var(--ease);
   z-index: 10;
   flex-shrink: 0;
 }
@@ -1292,7 +1307,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   15. HIGHLIGHTS
+   HIGHLIGHTS
    ========================================================================== */
 .highlights { background: var(--clr-bg); }
 
@@ -1356,7 +1371,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 .counter-item span { font-size: var(--fz-sm); color: var(--clr-text-3); }
 
 /* ==========================================================================
-   16. PORTFOLIO
+   PORTFOLIO
    ========================================================================== */
 .portfolio { background: var(--clr-surface); }
 
@@ -1419,7 +1434,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
   max-width: 480px;
 }
 
-/* ── Project tags with original brand colors ── */
+/* Project tags with original brand colors */
 .project-tags {
   display: flex; flex-wrap: wrap; gap: 8px;
   margin-bottom: var(--sp-lg);
@@ -1533,7 +1548,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   17. TESTIMONIALS
+   TESTIMONIALS
    ========================================================================== */
 .testimonials { background: var(--clr-bg); }
 
@@ -1589,7 +1604,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 .testi-author small  { color: var(--clr-text-3); font-size: var(--fz-xs); }
 
 /* ==========================================================================
-   18. CTA — with background image + overlay
+   CTA
    ========================================================================== */
 .cta { background: var(--clr-surface); }
 
@@ -1606,7 +1621,6 @@ html.dark .theme-btn #iconMoon    { display: block; }
   justify-content: center;
 }
 
-/* Background image layer */
 .cta-bg-image {
   position: absolute;
   inset: 0;
@@ -1621,20 +1635,13 @@ html.dark .theme-btn #iconMoon    { display: block; }
   transform: scale(1.03);
 }
 
-/* Overlay layer — dark gradient for readability */
 .cta-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(5, 20, 12, 0.88) 0%,
-    rgba(10, 40, 25, 0.82) 40%,
-    rgba(20, 184, 102, 0.25) 100%
-  );
+  background: linear-gradient(135deg,rgba(5, 20, 12, 0.88) 0%,rgba(10, 40, 25, 0.82) 40%,rgba(20, 184, 102, 0.25) 100%);
   z-index: -1;
 }
 
-/* Decorative accent glows */
 .cta-overlay::before {
   content: '';
   position: absolute;
@@ -1652,7 +1659,6 @@ html.dark .theme-btn #iconMoon    { display: block; }
   pointer-events: none;
 }
 
-/* Content wrapper sits above bg + overlay */
 .cta-content {
   position: relative;
   z-index: 1;
@@ -1706,7 +1712,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   19. CONTACT
+   CONTACT
    ========================================================================== */
 .contact { background: var(--clr-bg); }
 
@@ -1742,8 +1748,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
   border: 1px solid var(--clr-border);
   border-radius: var(--r-md);
   color: var(--clr-text-2);
-  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease),
-              transform 0.25s var(--ease-spring);
+  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease),transform 0.25s var(--ease-spring);
   text-decoration: none;
 }
 .cd-item:hover {
@@ -1770,7 +1775,6 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 .cd-item strong { font-size: var(--fz-sm); font-weight: 600; color: var(--clr-text-1); }
 
-/* ── Contact socials — circle border-radius ── */
 .contact-socials { display: flex; gap: 12px; }
 .cs-link {
   width: 44px; height: 44px;
@@ -1780,9 +1784,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
   color: var(--clr-text-2);
   display: flex; align-items: center; justify-content: center;
   font-size: 0.95rem;
-  transition: background 0.25s var(--ease), color 0.25s var(--ease),
-              transform 0.25s var(--ease-spring), border-color 0.25s var(--ease),
-              box-shadow 0.25s var(--ease);
+  transition: background 0.25s var(--ease), color 0.25s var(--ease),transform 0.25s var(--ease-spring), border-color 0.25s var(--ease),box-shadow 0.25s var(--ease);
 }
 .cs-link:hover {
   background: var(--clr-accent);
@@ -1823,8 +1825,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
   font-family: var(--font-body);
   font-size: var(--fz-sm);
   color: var(--clr-text-1);
-  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease),
-              background 0.25s var(--ease);
+  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease),background 0.25s var(--ease);
   outline: none;
 }
 .form-field input::placeholder,
@@ -1869,7 +1870,7 @@ html.dark .theme-btn #iconMoon    { display: block; }
 }
 
 /* ==========================================================================
-   20. FOOTER
+   FOOTER
    ========================================================================== */
 .footer {
   background: var(--clr-text-1);
@@ -1906,7 +1907,6 @@ html.dark .footer { background: #060e0b; }
 }
 .footer-links a:hover { color: var(--clr-accent); }
 
-/* ── Footer socials — circle border-radius ── */
 .footer-socials { display: flex; gap: 10px; }
 .footer-socials a {
   width: 40px; height: 40px;
@@ -1916,9 +1916,7 @@ html.dark .footer { background: #060e0b; }
   color: rgba(255,255,255,0.6);
   display: flex; align-items: center; justify-content: center;
   font-size: 0.85rem;
-  transition: background 0.25s var(--ease), color 0.25s var(--ease),
-              transform 0.25s var(--ease-spring), border-color 0.25s var(--ease),
-              box-shadow 0.25s var(--ease);
+  transition: background 0.25s var(--ease), color 0.25s var(--ease),transform 0.25s var(--ease-spring), border-color 0.25s var(--ease),box-shadow 0.25s var(--ease);
 }
 .footer-socials a:hover {
   background: var(--clr-accent);
@@ -1933,7 +1931,7 @@ html.dark .footer { background: #060e0b; }
 .footer-bottom i  { color: var(--clr-accent); font-size: 0.7rem; }
 
 /* ==========================================================================
-   21. TOAST NOTIFICATION
+   TOAST NOTIFICATION
    ========================================================================== */
 .toast{
   --toast-accent: #14b866;
@@ -1945,22 +1943,14 @@ html.dark .footer { background: #060e0b; }
   width: min(410px, calc(100vw - 32px));
   padding: 18px;
   border-radius: 20px;
-
   background: #ffffff;
   border: 1px solid rgba(0,0,0,.06);
-
-  box-shadow:
-    0 22px 55px rgba(0,0,0,.14),
-    0 10px 24px rgba(0,0,0,.08);
-
+  box-shadow:0 22px 55px rgba(0,0,0,.14),0 10px 24px rgba(0,0,0,.08);
   overflow: hidden;
   z-index: 9999;
-
   opacity: 0;
   transform: translateY(140px) scale(.92);
-  transition:
-    transform .55s cubic-bezier(.16,1,.3,1),
-    opacity .4s ease;
+  transition:transform .55s cubic-bezier(.16,1,.3,1),opacity .4s ease;
 }
 
 .toast.show{
@@ -2008,16 +1998,12 @@ html.dark .footer { background: #060e0b; }
   background: rgba(20,184,102,.10);
   color: var(--toast-accent);
   font-size:1.2rem;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.7),
-    0 8px 18px rgba(20,184,102,.12);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.7),0 8px 18px rgba(20,184,102,.12);
 }
 
 .toast--error .toast-icon{
   background: rgba(239,68,68,.10);
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.7),
-    0 8px 18px rgba(239,68,68,.12);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.7),0 8px 18px rgba(239,68,68,.12);
 }
 
 .toast-body{
@@ -2068,16 +2054,14 @@ html.dark .footer { background: #060e0b; }
 body.dark .toast{
   background:#111827;
   border:1px solid rgba(255,255,255,.06);
-  box-shadow:
-    0 22px 55px rgba(0,0,0,.45),
-    0 10px 24px rgba(0,0,0,.22);
+  box-shadow: 0 22px 55px rgba(0,0,0,.45),0 10px 24px rgba(0,0,0,.22);
 }
 body.dark .toast-body strong{ color:#ffffff; }
 body.dark .toast-body p{ color:#cbd5e1; }
 body.dark .toast-progress{ background:rgba(255,255,255,.08); }
 
 /* ==========================================================================
-   22. SCROLL TO TOP
+   SCROLL TO TOP
    ========================================================================== */
 .scroll-top {
   position: fixed;
@@ -2092,8 +2076,7 @@ body.dark .toast-progress{ background:rgba(255,255,255,.08); }
   opacity: 0;
   visibility: hidden;
   transform: translateY(12px);
-  transition: opacity 0.35s var(--ease), visibility 0.35s var(--ease),
-              transform 0.35s var(--ease-spring), background 0.25s var(--ease);
+  transition: opacity 0.35s var(--ease), visibility 0.35s var(--ease),transform 0.35s var(--ease-spring), background 0.25s var(--ease);
   z-index: 900;
 }
 .scroll-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
@@ -2104,8 +2087,9 @@ body.dark .toast-progress{ background:rgba(255,255,255,.08); }
   50%       { transform: translateY(-4px); }
 }
 
+
 /* ==========================================================================
-   23. RESPONSIVE
+   MOBILE RESPONSIVE
    ========================================================================== */
 @media (max-width: 1100px) {
   .services-grid   { grid-template-columns: repeat(2, 1fr); }
