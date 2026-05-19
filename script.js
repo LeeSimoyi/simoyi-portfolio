@@ -1,13 +1,9 @@
-/* ==========================================================================
-   SIMOYI LEE — PORTFOLIO JAVASCRIPT
-   Organized into clear modules for easy reading and maintenance
-   ========================================================================== */
 
 (function () {
   "use strict";
 
   /* ==========================================================================
-     1. DARK MODE TOGGLE
+     DARK MODE TOGGLE
      ========================================================================== */
   const themeBtn = document.getElementById("themeBtn");
   const htmlEl   = document.documentElement;
@@ -22,7 +18,7 @@
   });
 
   /* ==========================================================================
-     2. NAVBAR
+     NAVBAR
      ========================================================================== */
   const navbar      = document.getElementById("navbar");
   const hamburger   = document.getElementById("hamburger");
@@ -72,7 +68,7 @@
   handleScroll();
 
   /* ==========================================================================
-     3. CUSTOM CURSOR
+     CUSTOM CURSOR
      ========================================================================== */
   const cursor         = document.getElementById("cursor");
   const cursorFollower = document.getElementById("cursorFollower");
@@ -111,7 +107,7 @@
   }
 
   /* ==========================================================================
-     4. SCROLL REVEAL
+     SCROLL REVEAL
      ========================================================================== */
   const revealEls = document.querySelectorAll(".reveal");
 
@@ -127,7 +123,7 @@
   revealEls.forEach(el => revealObserver.observe(el));
 
   /* ==========================================================================
-     5. SKILL BARS
+     SKILL BARS
      ========================================================================== */
   const skillBars = document.querySelectorAll(".skill-bar");
 
@@ -147,7 +143,7 @@
   skillBars.forEach(bar => barObserver.observe(bar));
 
   /* ==========================================================================
-     6. ANIMATED COUNTERS
+     ANIMATED COUNTERS
      ========================================================================== */
   const counters = document.querySelectorAll(".counter");
 
@@ -176,7 +172,7 @@
   counters.forEach(c => countObserver.observe(c));
 
   /* ==========================================================================
-     7. SERVICES MODAL
+     SERVICES MODAL
      ========================================================================== */
   const serviceData = {
     web: {
@@ -251,7 +247,7 @@
   });
 
   /* ==========================================================================
-     8. SCROLL TO TOP BUTTON
+     SCROLL TO TOP BUTTON
      ========================================================================== */
   const scrollTopBtn = document.getElementById("scrollTop");
 
@@ -264,7 +260,7 @@
   });
 
   /* ==========================================================================
-     9. CONTACT FORM — validation + EmailJS
+     CONTACT FORM — validation + EmailJS
      ========================================================================== */
   emailjs.init("5IkvlnetHiJWb9jGd");
 
@@ -276,7 +272,7 @@
   const toastIcon   = document.getElementById("toastIcon");
   const toastProg   = document.getElementById("toastProgress");
 
-  /* ── Toast helper ── */
+  /* Toast helper */
   const showToast = (title, message, isError = false) => {
     if (toastProg) {
       toastProg.style.animation = "none";
@@ -299,7 +295,7 @@
     setTimeout(() => toast.classList.remove("show"), 4800);
   };
 
-  /* ── Validation helpers ── */
+  /* Validation helpers */
   const getField = (id) => document.getElementById(id);
 
   const setError = (input, message) => {
@@ -425,7 +421,7 @@
   });
 
   /* ==========================================================================
-     10. SMOOTH MARQUEE — pause on hover
+     SMOOTH MARQUEE — pause on hover
      ========================================================================== */
   const marqueeTrack = document.querySelector(".marquee-track");
   if (marqueeTrack) {
