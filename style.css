@@ -309,41 +309,6 @@ h1, h2, h3, h4, h5 {
 }
 
 /* ==========================================================================
-   CUSTOM CURSOR
-   ========================================================================== */
-.cursor,
-.cursor-follower {
-  pointer-events: none;
-  position: fixed;
-  border-radius: 50%;
-  z-index: 99999;
-  transition: transform 0.1s var(--ease);
-  display: none;
-}
-@media (hover: hover) and (pointer: fine) {
-  .cursor,
-  .cursor-follower { display: block; }
-}
-.cursor {
-  width: 8px; height: 8px;
-  background: var(--clr-accent);
-  transform: translate(-50%, -50%);
-}
-.cursor-follower {
-  width: 32px; height: 32px;
-  border: 1.5px solid var(--clr-accent);
-  opacity: 0.45;
-  transform: translate(-50%, -50%);
-  transition: transform 0.22s var(--ease), opacity 0.22s var(--ease),width 0.22s var(--ease-spring), height 0.22s var(--ease-spring);
-}
-.cursor-follower.hover {
-  width: 52px; height: 52px;
-  opacity: 0.2;
-  background: var(--clr-accent);
-  border-color: transparent;
-}
-
-/* ==========================================================================
    SCROLL REVEAL
    ========================================================================== */
 .reveal {
