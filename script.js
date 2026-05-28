@@ -67,44 +67,6 @@
   window.addEventListener("scroll", handleScroll, { passive: true });
   handleScroll();
 
-  /* ==========================================================================
-     CUSTOM CURSOR
-     ========================================================================== */
-  const cursor         = document.getElementById("cursor");
-  const cursorFollower = document.getElementById("cursorFollower");
-  let followerX = 0, followerY = 0;
-  let cursorX   = 0, cursorY   = 0;
-
-  const animateCursor = () => {
-    followerX += (cursorX - followerX) * 0.12;
-    followerY += (cursorY - followerY) * 0.12;
-
-    if (cursor) {
-      cursor.style.left = `${cursorX}px`;
-      cursor.style.top  = `${cursorY}px`;
-    }
-    if (cursorFollower) {
-      cursorFollower.style.left = `${followerX}px`;
-      cursorFollower.style.top  = `${followerY}px`;
-    }
-
-    requestAnimationFrame(animateCursor);
-  };
-
-  document.addEventListener("mousemove", (e) => {
-    cursorX = e.clientX;
-    cursorY = e.clientY;
-  });
-
-  const hoverTargets = document.querySelectorAll("a, button, [data-service]");
-  hoverTargets.forEach(el => {
-    el.addEventListener("mouseenter", () => cursorFollower?.classList.add("hover"));
-    el.addEventListener("mouseleave", () => cursorFollower?.classList.remove("hover"));
-  });
-
-  if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
-    animateCursor();
-  }
 
   /* ==========================================================================
      SCROLL REVEAL
