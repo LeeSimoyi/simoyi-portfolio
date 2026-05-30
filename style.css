@@ -409,9 +409,9 @@ html.dark .navbar:not(.scrolled) { background: rgba(12,22,18,0.4); }
   transition: width 0.3s var(--ease-spring);
 }
 .nav-menu li a:hover,
-.nav-menu li a.active            { color: var(--clr-accent); }
+.nav-menu li a.active  { color: var(--clr-accent); }
 .nav-menu li a:hover::after,
-.nav-menu li a.active::after     { width: 100%; }
+.nav-menu li a.active::after  { width: 100%; }
 
 .nav-close-item { display: none; }
 
@@ -442,7 +442,9 @@ html.dark .navbar:not(.scrolled) { background: rgba(12,22,18,0.4); }
 .theme-btn {
   width: 38px; height: 38px;
   border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
   background: var(--clr-surface-2);
   border: 1px solid var(--clr-border);
   color: var(--clr-text-2);
@@ -454,9 +456,9 @@ html.dark .navbar:not(.scrolled) { background: rgba(12,22,18,0.4); }
   color: var(--clr-accent);
   transform: rotate(20deg);
 }
-.theme-btn #iconMoon              { display: none; }
-html.dark .theme-btn #iconSun     { display: none; }
-html.dark .theme-btn #iconMoon    { display: block; }
+.theme-btn #iconMoon  { display: none; }
+html.dark .theme-btn #iconSun  { display: none; }
+html.dark .theme-btn #iconMoon  { display: block; }
 
 .nav-cta {
   display: inline-flex;
