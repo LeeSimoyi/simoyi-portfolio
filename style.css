@@ -884,7 +884,9 @@ html.dark .theme-btn #iconMoon  { display: block; }
   background: var(--clr-accent-glow);
   color: var(--clr-accent);
   border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
   font-size: 0.8rem;
   flex-shrink: 0;
 }
@@ -932,13 +934,24 @@ html.dark .theme-btn #iconMoon  { display: block; }
   border-radius: 50%;
   background: var(--clr-accent-glow);
   color: var(--clr-accent);
-  display: flex; align-items: center; justify-content: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
   font-size: 1rem;
 }
-.tcard-icon.cert { background: rgba(245,158,11,0.12); color: #f59e0b; }
-.timeline-card-header h4 { font-size: var(--fz-md); font-weight: 700; }
+.tcard-icon.cert { 
+  background: rgba(245,158,11,0.12); 
+  color: #f59e0b; 
+}
+.timeline-card-header h4 { 
+  font-size: var(--fz-md); 
+  font-weight: 700; 
+}
 
-.timeline-item { display: flex; gap: var(--sp-sm); }
+.timeline-item { 
+  display: flex; 
+  gap: var(--sp-sm); 
+}
 .tl-dot {
   width: 10px; height: 10px;
   border-radius: 50%;
