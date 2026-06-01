@@ -685,7 +685,9 @@ html.dark .theme-btn #iconMoon  { display: block; }
 
 .hero-image-badge {
   position: absolute;
-  display: flex; align-items: center; gap: 8px;
+  display: flex; 
+  align-items: center; 
+  gap: 8px;
   background: var(--clr-surface);
   border: 1px solid var(--clr-border);
   box-shadow: var(--shadow-md);
@@ -700,14 +702,16 @@ html.dark .theme-btn #iconMoon  { display: block; }
 .hero-image-badge i { color: var(--clr-accent); }
 
 .hero-image-badge:not(.hero-image-badge--compact) {
-  bottom: 12px; left: -20px;
+  bottom: 12px; 
+  left: -20px;
   padding: 8px 14px;
   font-size: var(--fz-sm);
 }
 .hero-image-badge:not(.hero-image-badge--compact) i { font-size: 0.9rem; }
 
 .hero-image-badge--compact {
-  top: 16px; right: -16px;
+  top: 16px; 
+  right: -16px;
   padding: 5px 12px;
   font-size: var(--fz-xs);
   border-radius: var(--r-full);
@@ -725,10 +729,13 @@ html.dark .theme-btn #iconMoon  { display: block; }
 /* Scroll indicator */
 .hero-scroll {
   position: absolute;
-  bottom: 24px; left: 50%;
+  bottom: 24px; 
+  left: 50%;
   transform: translateX(-50%);
-  display: flex; flex-direction: column;
-  align-items: center; gap: 8px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  gap: 8px;
   color: var(--clr-text-3);
   font-size: var(--fz-xs);
   font-family: var(--font-display);
@@ -741,14 +748,17 @@ html.dark .theme-btn #iconMoon  { display: block; }
 }
 
 .hero-scroll-mouse {
-  width: 26px; height: 40px;
+  width: 26px; 
+  height: 40px;
   border: 2px solid var(--clr-text-3);
   border-radius: var(--r-full);
-  display: flex; justify-content: center;
+  display: flex; 
+  justify-content: center;
   padding-top: 7px;
 }
 .hero-scroll-wheel {
-  width: 4px; height: 8px;
+  width: 4px; 
+  height: 8px;
   background: var(--clr-accent);
   border-radius: var(--r-full);
   animation: wheelScroll 2s ease-in-out infinite;
@@ -820,7 +830,8 @@ html.dark .theme-btn #iconMoon  { display: block; }
   background: var(--clr-surface-2);
 }
 .about-img-frame img {
-  width: 100%; height: 100%;
+  width: 100%; 
+  height: 100%;
   object-fit: cover;
   object-position: top;
   transition: transform 0.6s var(--ease);
@@ -828,7 +839,9 @@ html.dark .theme-btn #iconMoon  { display: block; }
 .about-img-frame:hover img { transform: scale(1.04); }
 .about-img-accent {
   position: absolute;
-  bottom: 0; left: 0; right: 0;
+  bottom: 0; 
+  left: 0; 
+  right: 0;
   height: 40%;
   background: linear-gradient(to top, rgba(20,184,102,0.25), transparent);
   pointer-events: none;
@@ -839,7 +852,8 @@ html.dark .theme-btn #iconMoon  { display: block; }
   align-items: center;
   gap: 12px;
   position: absolute;
-  bottom: -20px; right: -20px;
+  bottom: -20px; 
+  right: -20px;
   background: var(--clr-surface);
   border: 1px solid var(--clr-border);
   border-radius: var(--r-lg);
@@ -849,16 +863,27 @@ html.dark .theme-btn #iconMoon  { display: block; }
   animation: badgeFloat 5s ease-in-out infinite;
 }
 .about-card-float i {
-  width: 36px; height: 36px;
+  width: 36px; 
+  height: 36px;
   background: var(--clr-accent-glow);
   color: var(--clr-accent);
   border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
   font-size: 1rem;
   flex-shrink: 0;
 }
-.about-card-float strong { display: block; font-weight: 700; color: var(--clr-text-1); }
-.about-card-float span   { display: block; color: var(--clr-text-3); font-size: var(--fz-xs); }
+.about-card-float strong { 
+  display: block; 
+  font-weight: 700; 
+  color: var(--clr-text-1); 
+}
+.about-card-float span  { 
+  display: block; 
+  color: var(--clr-text-3); 
+  font-size: var(--fz-xs); 
+}
 
 .about-role {
   font-family: var(--font-display);
@@ -894,7 +919,8 @@ html.dark .theme-btn #iconMoon  { display: block; }
   color: var(--clr-text-2);
 }
 .fact i {
-  width: 32px; height: 32px;
+  width: 32px; 
+  height: 32px;
   background: var(--clr-accent-glow);
   color: var(--clr-accent);
   border-radius: 50%;
@@ -944,7 +970,8 @@ html.dark .theme-btn #iconMoon  { display: block; }
   margin-bottom: var(--sp-md);
 }
 .tcard-icon {
-  width: 42px; height: 42px;
+  width: 42px; 
+  height: 42px;
   border-radius: 50%;
   background: var(--clr-accent-glow);
   color: var(--clr-accent);
