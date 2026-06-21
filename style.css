@@ -595,15 +595,6 @@ html.dark .theme-btn #iconMoon  { display: block; }
   position: relative;
   display: inline-block;
 }
-.hero-highlight::after {
-  content: '';
-  position: absolute;
-  bottom: 4px; left: 0;
-  width: 100%; height: 4px;
-  background: var(--clr-accent);
-  opacity: 0.28;
-  border-radius: var(--r-full);
-}
 
 .hero-sub {
   font-size: var(--fz-md);
