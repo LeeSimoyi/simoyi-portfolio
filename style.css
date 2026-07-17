@@ -223,14 +223,22 @@ h1, h2, h3, h4, h5 {
   background: rgba(255,255,255,0.06);
   backdrop-filter: blur(6px);
 }
-.btn-ghost--hero:hover { border-color: #fff; background: var(--clr-accent); color: #fff; }
+.btn-ghost--hero:hover { 
+  border-color: #fff; 
+  background: var(--clr-accent); 
+  color: #fff; 
+}
 
 .cta-actions .btn-ghost {
   color: #fff;
   border-color: rgba(255,255,255,0.4);
   background: rgba(255,255,255,0.06);
 }
-.cta-actions .btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,0.15); color: #fff; }
+.cta-actions .btn-ghost:hover { 
+  border-color: #fff; 
+  background: rgba(255,255,255,0.15); 
+  color: #fff; 
+}
 
 .btn-outline {
   display: inline-flex;
