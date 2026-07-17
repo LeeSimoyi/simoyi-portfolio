@@ -379,15 +379,25 @@ html.dark .navbar:not(.scrolled) { background: rgba(12,22,18,0.4); }
 .nav-close-item { display: none; }
 
 .nav-close-btn {
-  width: 44px; height: 44px; border-radius: 50%;
-  background: var(--clr-surface-2); border: 1.5px solid var(--clr-border);
+  width: 44px; 
+  height: 44px; 
+  border-radius: 50%;
+  background: var(--clr-surface-2); 
+  border: 1.5px solid var(--clr-border);
   color: var(--clr-text-1);
-  display: flex; align-items: center; justify-content: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
   font-size: 1.1rem;
   transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.25s var(--ease-spring);
   flex-shrink: 0;
 }
-.nav-close-btn:hover { background: var(--clr-accent); color: #fff; border-color: var(--clr-accent); transform: scale(1.08) rotate(90deg); }
+.nav-close-btn:hover { 
+  background: var(--clr-accent); 
+  color: #fff; 
+  border-color: var(--clr-accent); 
+  transform: scale(1.08) rotate(90deg);
+}
 
 .nav-actions { display: flex; align-items: center; gap: var(--sp-sm); }
 
