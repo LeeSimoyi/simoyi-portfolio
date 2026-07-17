@@ -246,8 +246,14 @@ h1, h2, h3, h4, h5 {
   border: 2px solid var(--clr-accent);
   transition: background 0.25s var(--ease), color 0.25s var(--ease), transform 0.25s var(--ease-spring);
 }
-.btn-outline:hover { background: var(--clr-accent); color: #fff; transform: translateY(-2px); }
-.btn-outline i { transition: transform 0.25s var(--ease-spring); }
+.btn-outline:hover { 
+  background: var(--clr-accent); 
+  color: #fff; 
+  transform: translateY(-2px); 
+}
+.btn-outline i { 
+  transition: transform 0.25s var(--ease-spring); 
+}
 .btn-outline:hover i { transform: translateX(4px); }
 
 .btn-full { width: 100%; justify-content: center; }
@@ -316,7 +322,10 @@ h1, h2, h3, h4, h5 {
 .nav-overlay.active { opacity: 1; visibility: visible; }
 
 .navbar {
-  position: fixed; top: 0; left: 0; right: 0;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  right: 0;
   z-index: 2000;
   transition: background 0.35s var(--ease), box-shadow 0.35s var(--ease), padding 0.35s var(--ease);
   padding: 10px 0;
@@ -331,8 +340,12 @@ html.dark .navbar.scrolled     { background: rgba(12,22,18,0.92); }
 html.dark .navbar:not(.scrolled) { background: rgba(12,22,18,0.4); }
 
 .nav-inner {
-  max-width: var(--max-w); margin-inline: auto; padding-inline: var(--pad-x);
-  display: flex; align-items: center; justify-content: space-between;
+  max-width: var(--max-w); 
+  margin-inline: auto; 
+  padding-inline: var(--pad-x);
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
   height: 64px;
 }
 
