@@ -336,14 +336,19 @@ h1, h2, h3, h4, h5 {
    NAVBAR
    ========================================================================== */
 .nav-overlay {
-  position: fixed; inset: 0;
+  position: fixed; 
+  inset: 0;
   background: rgba(0,0,0,0.5);
   backdrop-filter: blur(8px);
-  opacity: 0; visibility: hidden;
+  opacity: 0; 
+  visibility: hidden;
   transition: opacity 0.35s var(--ease), visibility 0.35s var(--ease);
   z-index: 1900;
 }
-.nav-overlay.active { opacity: 1; visibility: visible; }
+.nav-overlay.active { 
+  opacity: 1; 
+  visibility: visible; 
+}
 
 .navbar {
   position: fixed; 
@@ -375,12 +380,19 @@ html.dark .navbar:not(.scrolled) { background: rgba(12,22,18,0.4); }
 
 .nav-logo {
   font-family: var(--font-main);
-  font-size: 1.55rem; font-weight: 800;
-  color: var(--clr-text-1); letter-spacing: -0.04em; flex-shrink: 0;
+  font-size: 1.55rem; 
+  font-weight: 800;
+  color: var(--clr-text-1); 
+  letter-spacing: -0.04em; 
+  flex-shrink: 0;
 }
 .nav-logo span { color: var(--clr-accent); }
 
-.nav-menu { display: flex; align-items: center; gap: 2.25rem; }
+.nav-menu { 
+  display: flex; 
+  align-items: center; 
+  gap: 2.25rem; 
+}
 .nav-menu li a {
   font-family: var(--font-main);
   font-size: var(--fz-sm); font-weight: 600;
