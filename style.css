@@ -435,16 +435,30 @@ html.dark .navbar:not(.scrolled) { background: rgba(12,22,18,0.4); }
   transform: scale(1.08) rotate(90deg);
 }
 
-.nav-actions { display: flex; align-items: center; gap: var(--sp-sm); }
+.nav-actions { 
+  display: flex; 
+  align-items: center; 
+  gap: var(--sp-sm); 
+}
 
 .theme-btn {
-  width: 38px; height: 38px; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  background: var(--clr-surface-2); border: 1px solid var(--clr-border);
-  color: var(--clr-text-2); font-size: 0.85rem;
+  width: 38px; 
+  height: 38px; 
+  border-radius: 50%;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  background: var(--clr-surface-2); 
+  border: 1px solid var(--clr-border);
+  color: var(--clr-text-2); 
+  font-size: 0.85rem;
   transition: background 0.25s, color 0.25s, transform 0.25s var(--ease-spring);
 }
-.theme-btn:hover { background: var(--clr-accent-glow); color: var(--clr-accent); transform: rotate(20deg); }
+.theme-btn:hover { 
+  background: var(--clr-accent-glow); 
+  color: var(--clr-accent); 
+  transform: rotate(20deg); 
+}
 .theme-btn #iconMoon { display: none; }
 html.dark .theme-btn #iconSun  { display: none; }
 html.dark .theme-btn #iconMoon { display: block; }
