@@ -634,13 +634,22 @@ html.dark .theme-btn #iconMoon { display: block; }
 }
 
 .hero-scroll {
-  position: absolute; bottom: 24px; left: 50%;
+  position: absolute; 
+  bottom: 24px; 
+  left: 50%;
   transform: translateX(-50%);
-  display: flex; flex-direction: column; align-items: center; gap: 8px;
-  color: var(--clr-text-3); font-size: var(--fz-xs);
-  font-family: var(--font-main); font-weight: 600;
-  letter-spacing: 0.1em; text-transform: uppercase;
-  animation: scrollFade 3s ease-in-out infinite; z-index: 3;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 8px;
+  color: var(--clr-text-3); 
+  font-size: var(--fz-xs);
+  font-family: var(--font-main); 
+  font-weight: 600;
+  letter-spacing: 0.1em; 
+  text-transform: uppercase;
+  animation: scrollFade 3s ease-in-out infinite; 
+  z-index: 3;
 }
 .hero-scroll-mouse {
   width: 26px; height: 40px; border: 2px solid var(--clr-text-3);
