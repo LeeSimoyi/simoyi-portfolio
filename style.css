@@ -610,27 +610,38 @@ html.dark .theme-btn #iconMoon { display: block; }
 }
 
 .hero-image-wrap {
-  position: relative; width: 100%; aspect-ratio: 1;
-  display: flex; align-items: center; justify-content: center;
+  position: relative; 
+  width: 100%; 
+  aspect-ratio: 1;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
 }
 .hero-image-ring {
-  position: absolute; inset: -20px; border-radius: 50%;
+  position: absolute; 
+  inset: -20px; 
+  border-radius: 50%;
   border: 2px dashed rgba(20,184,102,0.22);
   animation: ringRotate 18s linear infinite;
 }
 .hero-image-ring--2 {
-  inset: -40px; border-style: dotted;
+  inset: -40px; 
+  border-style: dotted;
   border-color: rgba(20,184,102,0.12);
   animation-duration: 28s; animation-direction: reverse;
 }
 @keyframes ringRotate { to { transform: rotate(360deg); } }
 
 .hero-photo {
-  width: 100%; aspect-ratio: 1; border-radius: 50%;
-  object-fit: cover; object-position: top;
+  width: 100%; 
+  aspect-ratio: 1; 
+  border-radius: 50%;
+  object-fit: cover; 
+  object-position: top;
   border: 5px solid var(--clr-surface);
   box-shadow: var(--shadow-lg), 0 0 0 1px var(--clr-border);
-  transition: transform 0.5s var(--ease-spring); display: block;
+  transition: transform 0.5s var(--ease-spring); 
+  display: block;
 }
 .hero-photo:hover { transform: scale(1.03); }
 
