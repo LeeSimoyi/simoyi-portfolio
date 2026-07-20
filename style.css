@@ -738,11 +738,20 @@ html.dark .theme-btn #iconMoon { display: block; }
   animation: marqueeRun 28s linear infinite;
 }
 .marquee-track span {
-  font-family: var(--font-main); font-size: var(--fz-sm); font-weight: 600;
-  color: var(--clr-text-2); padding: 0 20px; white-space: nowrap;
-  text-transform: uppercase; letter-spacing: 0.05em;
+  font-family: var(--font-main); 
+  font-size: var(--fz-sm); 
+  font-weight: 600;
+  color: var(--clr-text-2); 
+  padding: 0 20px; 
+  white-space: nowrap;
+  text-transform: uppercase; 
+  letter-spacing: 0.05em;
 }
-.marquee-track .dot { color: var(--clr-accent); padding: 0 4px; font-weight: 800; }
+.marquee-track .dot { 
+  color: var(--clr-accent); 
+  padding: 0 4px; 
+  font-weight: 800; 
+}
 @keyframes marqueeRun { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 /* ==========================================================================
@@ -751,23 +760,35 @@ html.dark .theme-btn #iconMoon { display: block; }
 .about { background: var(--clr-surface); }
 
 .about-grid {
-  display: grid; grid-template-columns: 1fr 1.1fr;
-  gap: var(--sp-2xl); align-items: center;
+  display: grid; 
+  grid-template-columns: 1fr 1.1fr;
+  gap: var(--sp-2xl); 
+  align-items: center;
 }
 
 .about-image-col { position: relative; }
 
 .about-img-frame {
-  position: relative; border-radius: var(--r-xl);
-  overflow: hidden; aspect-ratio: 4/5; background: var(--clr-surface-2);
+  position: relative; 
+  border-radius: var(--r-xl);
+  overflow: hidden; 
+  aspect-ratio: 4/5; 
+  background: var(--clr-surface-2);
 }
 .about-img-frame img {
-  width: 100%; height: 100%; object-fit: cover; object-position: top;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  object-position: top;
   transition: transform 0.6s var(--ease);
 }
 .about-img-frame:hover img { transform: scale(1.04); }
 .about-img-accent {
-  position: absolute; bottom: 0; left: 0; right: 0; height: 40%;
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  height: 40%;
   background: linear-gradient(to top, rgba(20,184,102,0.25), transparent);
   pointer-events: none;
 }
