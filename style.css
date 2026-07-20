@@ -969,20 +969,34 @@ html.dark .theme-btn #iconMoon { display: block; }
    MODAL
    ========================================================================== */
 .modal-backdrop {
-  position: fixed; inset: 0; background: rgba(0,0,0,0.55);
+  position: fixed; 
+  inset: 0; 
+  background: rgba(0,0,0,0.55);
   backdrop-filter: blur(12px);
-  display: flex; align-items: center; justify-content: center;
-  padding: var(--sp-md); opacity: 0; visibility: hidden;
-  transition: opacity 0.35s, visibility 0.35s; z-index: 5000;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  padding: var(--sp-md); 
+  opacity: 0; 
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s; 
+  z-index: 5000;
 }
 .modal-backdrop.active { opacity: 1; visibility: visible; }
 .modal-card {
-  width: 100%; max-width: 520px; background: var(--clr-surface);
-  border-radius: var(--r-xl); padding: var(--sp-xl) var(--sp-lg) var(--sp-lg);
-  position: relative; box-shadow: var(--shadow-lg);
-  transform: scale(0.9) translateY(20px); opacity: 0;
+  width: 100%; 
+  max-width: 520px; 
+  background: var(--clr-surface);
+  border-radius: var(--r-xl); 
+  padding: var(--sp-xl) var(--sp-lg) var(--sp-lg);
+  position: relative; 
+  box-shadow: var(--shadow-lg);
+  transform: scale(0.9) translateY(20px); 
+  opacity: 0;
   transition: transform 0.4s var(--ease-spring), opacity 0.4s var(--ease);
-  overflow: hidden; max-height: 90vh; overflow-y: auto;
+  overflow: hidden; 
+  max-height: 90vh; 
+  overflow-y: auto;
 }
 .modal-backdrop.active .modal-card { transform: scale(1) translateY(0); opacity: 1; }
 .modal-close {
