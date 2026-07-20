@@ -697,12 +697,20 @@ html.dark .theme-btn #iconMoon { display: block; }
   z-index: 3;
 }
 .hero-scroll-mouse {
-  width: 26px; height: 40px; border: 2px solid var(--clr-text-3);
-  border-radius: var(--r-full); display: flex; justify-content: center; padding-top: 7px;
+  width: 26px; 
+  height: 40px; 
+  border: 2px solid var(--clr-text-3);
+  border-radius: var(--r-full); 
+  display: flex; 
+  justify-content: center; 
+  padding-top: 7px;
 }
 .hero-scroll-wheel {
-  width: 4px; height: 8px; background: var(--clr-accent);
-  border-radius: var(--r-full); animation: wheelScroll 2s ease-in-out infinite;
+  width: 4px; 
+  height: 8px; 
+  background: var(--clr-accent);
+  border-radius: var(--r-full); 
+  animation: wheelScroll 2s ease-in-out infinite;
 }
 @keyframes wheelScroll {
   0%, 100% { transform: translateY(0); opacity: 1; }
@@ -717,13 +725,16 @@ html.dark .theme-btn #iconMoon { display: block; }
    MARQUEE
    ========================================================================== */
 .marquee-strip {
-  overflow: hidden; background: var(--clr-surface);
+  overflow: hidden; 
+  background: var(--clr-surface);
   border-top: 1px solid var(--clr-border);
   border-bottom: 1px solid var(--clr-border);
   padding: 14px 0;
 }
 .marquee-track {
-  display: flex; align-items: center; width: max-content;
+  display: flex; 
+  align-items: center; 
+  width: max-content;
   animation: marqueeRun 28s linear infinite;
 }
 .marquee-track span {
