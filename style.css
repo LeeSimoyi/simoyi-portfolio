@@ -646,16 +646,26 @@ html.dark .theme-btn #iconMoon { display: block; }
 .hero-photo:hover { transform: scale(1.03); }
 
 .hero-image-badge {
-  position: absolute; display: flex; align-items: center; gap: 8px;
-  background: var(--clr-surface); border: 1px solid var(--clr-border);
-  box-shadow: var(--shadow-md); border-radius: var(--r-lg);
-  font-family: var(--font-main); font-weight: 600; color: var(--clr-text-1);
+  position: absolute; 
+  display: flex; 
+  align-items: center; 
+  gap: 8px;
+  background: var(--clr-surface); 
+  border: 1px solid var(--clr-border);
+  box-shadow: var(--shadow-md); 
+  border-radius: var(--r-lg);
+  font-family: var(--font-main); 
+  font-weight: 600; color: var(--clr-text-1);
   animation: badgeFloat 4s ease-in-out infinite;
-  white-space: nowrap; z-index: 3;
+  white-space: nowrap; 
+  z-index: 3;
 }
 .hero-image-badge i { color: var(--clr-accent); }
 .hero-image-badge:not(.hero-image-badge--compact) {
-  bottom: 12px; left: -20px; padding: 8px 14px; font-size: var(--fz-sm);
+  bottom: 12px; 
+  left: -20px; 
+  padding: 8px 14px; 
+  font-size: var(--fz-sm);
 }
 .hero-image-badge--compact {
   top: 16px; right: -16px; padding: 5px 12px;
