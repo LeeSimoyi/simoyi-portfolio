@@ -794,20 +794,37 @@ html.dark .theme-btn #iconMoon { display: block; }
 }
 
 .about-card-float {
-  display: flex; align-items: center; gap: 12px;
-  position: absolute; bottom: -20px; right: -20px;
-  background: var(--clr-surface); border: 1px solid var(--clr-border);
-  border-radius: var(--r-lg); padding: 14px 20px;
-  box-shadow: var(--shadow-md); font-size: var(--fz-sm);
+  display: flex; 
+  align-items: center; 
+  gap: 12px;
+  position: absolute; 
+  bottom: -20px; 
+  right: -20px;
+  background: var(--clr-surface); 
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-lg); 
+  padding: 14px 20px;
+  box-shadow: var(--shadow-md); 
+  font-size: var(--fz-sm);
   animation: badgeFloat 5s ease-in-out infinite;
 }
 .about-card-float i {
-  width: 36px; height: 36px; background: var(--clr-accent-glow);
-  color: var(--clr-accent); border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1rem; flex-shrink: 0;
+  width: 36px; 
+  height: 36px; 
+  background: var(--clr-accent-glow);
+  color: var(--clr-accent); 
+  border-radius: 50%;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  font-size: 1rem; 
+  flex-shrink: 0;
 }
-.about-card-float strong { display: block; font-weight: 700; color: var(--clr-text-1); }
+.about-card-float strong { 
+  display: block; 
+  font-weight: 700; 
+  color: var(--clr-text-1); 
+}
 .about-card-float span  { display: block; color: var(--clr-text-3); font-size: var(--fz-xs); }
 
 .about-role {
