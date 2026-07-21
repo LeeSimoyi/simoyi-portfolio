@@ -825,31 +825,65 @@ html.dark .theme-btn #iconMoon { display: block; }
   font-weight: 700; 
   color: var(--clr-text-1); 
 }
-.about-card-float span  { display: block; color: var(--clr-text-3); font-size: var(--fz-xs); }
+.about-card-float span  { 
+  display: block; 
+  color: var(--clr-text-3); 
+  font-size: var(--fz-xs); 
+}
 
 .about-role {
-  font-family: var(--font-main); font-size: var(--fz-sm); font-weight: 600;
-  color: var(--clr-accent); text-transform: uppercase;
-  letter-spacing: 0.08em; margin-bottom: var(--sp-md);
+  font-family: var(--font-main); 
+  font-size: var(--fz-sm); 
+  font-weight: 600;
+  color: var(--clr-accent); 
+  text-transform: uppercase;
+  letter-spacing: 0.08em; 
+  margin-bottom: var(--sp-md);
 }
 
-.about-desc { color: var(--clr-text-2); line-height: 1.8; margin-bottom: var(--sp-sm); font-weight: 400; }
+.about-desc { 
+  color: var(--clr-text-2); 
+  line-height: 1.8; 
+  margin-bottom: var(--sp-sm); 
+  font-weight: 400; 
+}
 
 .about-facts {
-  display: flex; flex-direction: column; gap: 10px;
-  margin: var(--sp-md) 0; padding: var(--sp-md);
-  background: var(--clr-surface-2); border-radius: var(--r-md);
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px;
+  margin: var(--sp-md) 0; 
+  padding: var(--sp-md);
+  background: var(--clr-surface-2); 
+  border-radius: var(--r-md);
   border: 1px solid var(--clr-border);
 }
-.fact { display: flex; align-items: center; gap: 12px; font-size: var(--fz-sm); color: var(--clr-text-2); }
+.fact { 
+  display: flex; 
+  align-items: center; 
+  gap: 12px; 
+  font-size: var(--fz-sm); 
+  color: var(--clr-text-2); 
+}
 .fact i {
-  width: 32px; height: 32px; background: var(--clr-accent-glow);
-  color: var(--clr-accent); border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 0.8rem; flex-shrink: 0;
+  width: 32px; 
+  height: 32px; 
+  background: var(--clr-accent-glow);
+  color: var(--clr-accent); 
+  border-radius: 50%;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  font-size: 0.8rem; 
+  flex-shrink: 0;
 }
 
-.about-actions { display: flex; flex-wrap: wrap; gap: var(--sp-sm); margin-top: var(--sp-md); }
+.about-actions { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: var(--sp-sm); 
+  margin-top: var(--sp-md); 
+}
 
 /* ==========================================================================
    SKILLS
@@ -857,22 +891,41 @@ html.dark .theme-btn #iconMoon { display: block; }
 .skills { background: var(--clr-bg); }
 
 .skills-grid {
-  display: grid; grid-template-columns: 1fr 1.5fr;
-  gap: var(--sp-xl); align-items: start;
+  display: grid; 
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--sp-xl); 
+  align-items: start;
 }
 
 .timeline-card {
-  background: var(--clr-surface); border: 1px solid var(--clr-border);
-  border-radius: var(--r-lg); padding: var(--sp-lg);
-  box-shadow: var(--shadow-sm); margin-bottom: var(--sp-md);
+  background: var(--clr-surface); 
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-lg); 
+  padding: var(--sp-lg);
+  box-shadow: var(--shadow-sm); 
+  margin-bottom: var(--sp-md);
   transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
 }
-.timeline-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-.timeline-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: var(--sp-md); }
+.timeline-card:hover { 
+  transform: translateY(-4px); 
+  box-shadow: var(--shadow-md);
+}
+.timeline-card-header { 
+  display: flex; 
+  align-items: center; 
+  gap: 12px; 
+  margin-bottom: var(--sp-md); 
+}
 .tcard-icon {
-  width: 42px; height: 42px; border-radius: 50%;
-  background: var(--clr-accent-glow); color: var(--clr-accent);
-  display: flex; align-items: center; justify-content: center; font-size: 1rem;
+  width: 42px; 
+  height: 42px; 
+  border-radius: 50%;
+  background: var(--clr-accent-glow); 
+  color: var(--clr-accent);
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 1rem;
 }
 .tcard-icon.cert { background: rgba(245,158,11,0.12); color: #f59e0b; }
 .tcard-icon.soft { background: rgba(139,92,246,0.12); color: #8b5cf6; }
