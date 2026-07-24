@@ -1014,34 +1014,61 @@ html.dark .theme-btn #iconMoon { display: block; }
   stroke-width: 6; 
 }
 .ssc-fill {
-  fill: none; stroke: var(--clr-accent); stroke-width: 6;
-  stroke-linecap: round; stroke-dasharray: 201.06; stroke-dashoffset: 201.06;
+  fill: none; 
+  stroke: var(--clr-accent); 
+  stroke-width: 6;
+  stroke-linecap: round; 
+  stroke-dasharray: 201.06; 
+  stroke-dashoffset: 201.06;
   transition: stroke-dashoffset 1.4s cubic-bezier(0.4, 0, 0.2, 1);
   filter: drop-shadow(0 0 4px rgba(20,184,102,0.4));
 }
 .ssc-percent {
-  position: relative; z-index: 2;
-  font-family: var(--font-main); font-size: 0.78rem; font-weight: 800;
+  position: relative; 
+  z-index: 2;
+  font-family: var(--font-main); 
+  font-size: 0.78rem; 
+  font-weight: 800;
   color: var(--clr-text-1);
 }
 .soft-skill-label {
-  font-family: var(--font-main); font-size: var(--fz-xs); font-weight: 600;
-  color: var(--clr-text-2); text-align: center;
-  display: flex; align-items: center; gap: 4px; white-space: nowrap;
+  font-family: var(--font-main); 
+  font-size: var(--fz-xs); 
+  font-weight: 600;
+  color: var(--clr-text-2); 
+  text-align: center;
+  display: flex; 
+  align-items: center; 
+  gap: 4px; 
+  white-space: nowrap;
 }
-.soft-skill-label i { color: var(--clr-accent); font-size: 0.65rem; }
+.soft-skill-label i { 
+  color: var(--clr-accent); 
+  font-size: 0.65rem; 
+}
 
 /* Skill bars */
 .skill-card {
-  background: var(--clr-surface); border: 1px solid var(--clr-border);
-  border-radius: var(--r-lg); padding: var(--sp-lg);
-  box-shadow: var(--shadow-sm); margin-bottom: var(--sp-md);
+  background: var(--clr-surface); 
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-lg); 
+  padding: var(--sp-lg);
+  box-shadow: var(--shadow-sm); 
+  margin-bottom: var(--sp-md);
   transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
 }
-.skill-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.skill-card:hover { 
+  transform: translateY(-4px); 
+  box-shadow: var(--shadow-md); 
+}
 .skill-card-title {
-  font-size: var(--fz-base); font-weight: 700; color: var(--clr-text-1);
-  margin-bottom: var(--sp-md); display: flex; align-items: center; gap: 8px;
+  font-size: var(--fz-base); 
+  font-weight: 700; 
+  color: var(--clr-text-1);
+  margin-bottom: var(--sp-md); 
+  display: flex; 
+  align-items: center; 
+  gap: 8px;
 }
 .skill-card-title i { color: var(--clr-accent); }
 
