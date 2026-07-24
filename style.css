@@ -933,43 +933,86 @@ html.dark .theme-btn #iconMoon { display: block; }
 
 .timeline-item { display: flex; gap: var(--sp-sm); }
 .tl-dot {
-  width: 10px; height: 10px; border-radius: 50%;
-  background: var(--clr-accent); margin-top: 6px; flex-shrink: 0;
+  width: 10px; 
+  height: 10px; 
+  border-radius: 50%;
+  background: var(--clr-accent); 
+  margin-top: 6px; 
+  flex-shrink: 0;
   box-shadow: 0 0 0 4px var(--clr-accent-glow);
 }
 .tl-body small {
-  display: block; font-size: var(--fz-xs); font-weight: 600;
-  color: var(--clr-accent); text-transform: uppercase;
-  letter-spacing: 0.05em; margin-bottom: 4px;
+  display: block; 
+  font-size: var(--fz-xs); 
+  font-weight: 600;
+  color: var(--clr-accent); 
+  text-transform: uppercase;
+  letter-spacing: 0.05em; 
+  margin-bottom: 4px;
 }
-.tl-body h5 { font-size: var(--fz-base); font-weight: 700; color: var(--clr-text-1); margin-bottom: 2px; }
-.tl-body span { font-size: var(--fz-sm); color: var(--clr-text-3); font-weight: 400; }
+.tl-body h5 { 
+  font-size: var(--fz-base); 
+  font-weight: 700; 
+  color: var(--clr-text-1); 
+  margin-bottom: 2px; 
+}
+.tl-body span { 
+  font-size: var(--fz-sm); 
+  color: var(--clr-text-3); 
+  font-weight: 400; 
+}
 
 /* --- SOFT SKILLS CIRCLES --- */
 .soft-skills-card {
-  background: var(--clr-surface); border: 1px solid var(--clr-border);
-  border-radius: var(--r-lg); padding: var(--sp-lg);
-  box-shadow: var(--shadow-sm); margin-bottom: var(--sp-md);
+  background: var(--clr-surface); 
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-lg); 
+  padding: var(--sp-lg);
+  box-shadow: var(--shadow-sm); 
+  margin-bottom: var(--sp-md);
   transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
 }
-.soft-skills-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.soft-skills-card:hover { 
+  transform: translateY(-4px); 
+  box-shadow: var(--shadow-md); 
+}
 
 .soft-skills-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: var(--sp-md) var(--sp-sm); margin-top: var(--sp-sm);
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-md) var(--sp-sm); 
+  margin-top: var(--sp-sm);
 }
 
-.soft-skill-item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.soft-skill-item { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px; 
+}
 
 .soft-skill-circle {
-  position: relative; width: 76px; height: 76px;
-  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  position: relative; 
+  width: 76px; 
+  height: 76px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  flex-shrink: 0;
 }
 .ssc-svg {
-  width: 76px; height: 76px; transform: rotate(-90deg);
-  position: absolute; inset: 0; overflow: visible;
+  width: 76px; 
+  height: 76px; 
+  transform: rotate(-90deg);
+  position: absolute; 
+  inset: 0; 
+  overflow: visible;
 }
-.ssc-track { fill: none; stroke: var(--clr-surface-2); stroke-width: 6; }
+.ssc-track { 
+  fill: none; 
+  stroke: var(--clr-surface-2); 
+  stroke-width: 6; 
+}
 .ssc-fill {
   fill: none; stroke: var(--clr-accent); stroke-width: 6;
   stroke-linecap: round; stroke-dasharray: 201.06; stroke-dashoffset: 201.06;
