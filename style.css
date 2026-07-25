@@ -1074,14 +1074,25 @@ html.dark .theme-btn #iconMoon { display: block; }
 
 .skill-bar { margin-bottom: var(--sp-sm); }
 .sb-head {
-  display: flex; justify-content: space-between; align-items: center;
-  font-size: var(--fz-sm); font-weight: 500; color: var(--clr-text-2);
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  font-size: var(--fz-sm); 
+  font-weight: 500; 
+  color: var(--clr-text-2);
   margin-bottom: 8px;
 }
-.sb-head strong { font-size: var(--fz-xs); color: var(--clr-accent); font-weight: 600; }
+.sb-head strong { 
+  font-size: var(--fz-xs); 
+  color: var(--clr-accent); 
+  font-weight: 600; 
+}
 .sb-track {
-  height: 6px; background: var(--clr-surface-2); border-radius: var(--r-full);
-  overflow: hidden; border: 1px solid var(--clr-border);
+  height: 6px; 
+  background: var(--clr-surface-2); 
+  border-radius: var(--r-full);
+  overflow: hidden; 
+  border: 1px solid var(--clr-border);
 }
 .sb-fill {
   height: 100%; width: 0;
