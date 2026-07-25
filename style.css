@@ -1359,18 +1359,33 @@ html.dark .theme-btn #iconMoon { display: block; }
 .portfolio { background: var(--clr-surface); }
 
 .portfolio-tabs {
-  display: flex; align-items: center; flex-wrap: wrap;
-  gap: 10px; margin-bottom: var(--sp-xl); justify-content: center;
+  display: flex; 
+  align-items: center; 
+  flex-wrap: wrap;
+  gap: 10px; 
+  margin-bottom: var(--sp-xl); 
+  justify-content: center;
 }
 .ptab {
-  display: inline-flex; align-items: center; gap: 6px;
-  padding: 9px 22px; border-radius: var(--r-full);
-  font-family: var(--font-main); font-size: var(--fz-sm); font-weight: 600;
-  color: var(--clr-text-2); background: var(--clr-bg);
-  border: 1.5px solid var(--clr-border); cursor: pointer;
+  display: inline-flex; 
+  align-items: center; 
+  gap: 6px;
+  padding: 9px 22px; 
+  border-radius: var(--r-full);
+  font-family: var(--font-main); 
+  font-size: var(--fz-sm); 
+  font-weight: 600;
+  color: var(--clr-text-2); 
+  background: var(--clr-bg);
+  border: 1.5px solid var(--clr-border); 
+  cursor: pointer;
   transition: all 0.25s var(--ease);
 }
-.ptab:hover { border-color: var(--clr-accent); color: var(--clr-accent); background: var(--clr-accent-glow); }
+.ptab:hover { 
+  border-color: var(--clr-accent); 
+  color: var(--clr-accent); 
+  background: var(--clr-accent-glow); 
+}
 .ptab.active {
   background: var(--clr-accent); color: #fff; border-color: var(--clr-accent);
   box-shadow: 0 4px 18px rgba(20,184,102,0.3);
