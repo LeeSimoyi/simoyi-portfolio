@@ -1516,19 +1516,45 @@ html.dark .theme-btn #iconMoon { display: block; }
   gap: var(--sp-sm); 
 }
 
-.project-visual { position: relative; border-radius: var(--r-xl); overflow: hidden; }
+.project-visual { 
+  position: relative; 
+   border-radius: var(--r-xl); 
+   overflow: hidden; 
+}
 .project-screen {
-  border-radius: var(--r-lg); overflow: hidden;
-  border: 1px solid var(--clr-border); box-shadow: var(--shadow-lg);
+  border-radius: var(--r-lg); 
+  overflow: hidden;
+  border: 1px solid var(--clr-border); 
+  box-shadow: var(--shadow-lg);
   transform: perspective(1000px) rotateY(-3deg) rotateX(1deg);
   transition: transform 0.5s var(--ease-spring), box-shadow 0.5s;
 }
 .project-row--reverse .project-screen { transform: perspective(1000px) rotateY(3deg) rotateX(1deg); }
-.project-row:hover .project-screen { transform: perspective(1000px) rotateY(0) rotateX(0) scale(1.02); box-shadow: 0 30px 80px rgba(0,0,0,0.18); }
-.project-screen img { width: 100%; display: block; transition: transform 0.5s; }
+.project-row:hover .project-screen { 
+  transform: perspective(1000px) rotateY(0) rotateX(0) scale(1.02); 
+  box-shadow: 0 30px 80px rgba(0,0,0,0.18); 
+}
+.project-screen img { 
+  width: 100%; 
+  display: block; 
+  transition: transform 0.5s; 
+}
 .project-row:hover .project-screen img { transform: scale(1.03); }
-.project-glow { position: absolute; bottom: -40px; right: -40px; width: 200px; height: 200px; background: radial-gradient(circle, var(--clr-accent-glow), transparent 70%); pointer-events: none; }
-.project-glow--2 { bottom: -40px; left: -40px; right: auto; background: radial-gradient(circle, rgba(94,234,179,0.15), transparent 70%); }
+.project-glow { 
+  position: absolute; 
+  bottom: -40px; 
+  right: -40px; 
+  width: 200px; 
+  height: 200px; 
+  background: radial-gradient(circle, var(--clr-accent-glow), transparent 70%); 
+  pointer-events: none; 
+}
+.project-glow--2 { 
+   bottom: -40px; 
+   left: -40px; 
+   right: auto; 
+   background: radial-gradient(circle, rgba(94,234,179,0.15), transparent 70%); 
+}
 
 /* PROJECT CARD GRID */
 .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--sp-lg); }
