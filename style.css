@@ -1406,7 +1406,9 @@ html.dark .theme-btn #iconMoon { display: block; }
   background: var(--clr-accent-glow); 
 }
 .ptab.active {
-  background: var(--clr-accent); color: #fff; border-color: var(--clr-accent);
+  background: var(--clr-accent); 
+  color: #fff; 
+  border-color: var(--clr-accent);
   box-shadow: 0 4px 18px rgba(20,184,102,0.3);
 }
 
@@ -1414,38 +1416,83 @@ html.dark .theme-btn #iconMoon { display: block; }
 .projects-featured { margin-bottom: var(--sp-xl); }
 
 .project-row {
-  display: grid; grid-template-columns: 1fr 1.15fr;
-  gap: var(--sp-2xl); align-items: center; margin-bottom: var(--sp-xl);
-  padding: var(--sp-xl); background: var(--clr-bg);
-  border: 1px solid var(--clr-border); border-radius: var(--r-xl);
+  display: grid; 
+  grid-template-columns: 1fr 1.15fr;
+  gap: var(--sp-2xl); 
+  align-items: center; 
+  margin-bottom: var(--sp-xl);
+  padding: var(--sp-xl); 
+  background: var(--clr-bg);
+  border: 1px solid var(--clr-border); 
+  border-radius: var(--r-xl);
   overflow: hidden;
   transition: box-shadow 0.4s var(--ease), border-color 0.4s var(--ease);
 }
 .project-row:last-child { margin-bottom: 0; }
-.project-row:hover { box-shadow: var(--shadow-lg); border-color: rgba(20,184,102,0.2); }
+.project-row:hover { 
+  box-shadow: var(--shadow-lg); 
+  border-color: rgba(20,184,102,0.2); 
+}
 .project-row--reverse { grid-template-columns: 1.15fr 1fr; }
 .project-row--reverse .project-content { order: 2; }
 .project-row--reverse .project-visual  { order: 1; }
 
-.project-label { display: flex; align-items: center; gap: 10px; margin-bottom: var(--sp-sm); }
+.project-label { 
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+  margin-bottom: var(--sp-sm); 
+}
 .project-num {
-  font-family: var(--font-main); font-size: var(--fz-sm); font-weight: 800;
-  color: var(--clr-accent); background: var(--clr-accent-glow);
-  padding: 3px 10px; border-radius: var(--r-full);
+  font-family: var(--font-main); 
+  font-size: var(--fz-sm); 
+  font-weight: 800;
+  color: var(--clr-accent); 
+  background: var(--clr-accent-glow);
+  padding: 3px 10px; 
+  border-radius: var(--r-full);
 }
 .project-cat {
-  font-family: var(--font-main); font-size: var(--fz-xs); font-weight: 600;
-  color: var(--clr-text-3); text-transform: uppercase; letter-spacing: 0.1em;
+  font-family: var(--font-main); 
+  font-size: var(--fz-xs); 
+  font-weight: 600;
+  color: var(--clr-text-3); 
+  text-transform: uppercase; 
+  letter-spacing: 0.1em;
 }
-.project-title { font-size: clamp(2rem, 3.5vw, 2.75rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: var(--sp-sm); color: var(--clr-text-1); }
-.project-desc  { font-size: var(--fz-base); color: var(--clr-text-2); line-height: 1.8; margin-bottom: var(--sp-md); max-width: 480px; font-weight: 400; }
+.project-title { 
+  font-size: clamp(2rem, 3.5vw, 2.75rem); 
+  font-weight: 800; 
+  letter-spacing: -0.02em; 
+  margin-bottom: var(--sp-sm); 
+  color: var(--clr-text-1); 
+}
+.project-desc  { 
+  font-size: var(--fz-base); 
+  color: var(--clr-text-2); 
+  line-height: 1.8; 
+  margin-bottom: var(--sp-md); 
+  max-width: 480px; 
+  font-weight: 400; 
+}
 
-.project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: var(--sp-lg); }
+.project-tags { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 8px; 
+  margin-bottom: var(--sp-lg); 
+}
 .project-tags span {
-  display: inline-flex; align-items: center; gap: 6px;
-  padding: 7px 14px; border-radius: var(--r-full);
-  font-family: var(--font-main); font-size: var(--fz-xs); font-weight: 600;
-  box-shadow: var(--shadow-sm); border: 1px solid transparent;
+  display: inline-flex; 
+  align-items: center; 
+  gap: 6px;
+  padding: 7px 14px; 
+  border-radius: var(--r-full);
+  font-family: var(--font-main); 
+  font-size: var(--fz-xs); 
+  font-weight: 600;
+  box-shadow: var(--shadow-sm); 
+  border: 1px solid transparent;
 }
 .tag-html      { background: rgba(227,79,38,0.10);  color: #e34f26; border-color: rgba(227,79,38,0.25); }
 .tag-html i    { color: #e34f26; }
@@ -1464,7 +1511,10 @@ html.dark .theme-btn #iconMoon { display: block; }
 .tag-wordpress { background: rgba(33,117,155,0.10);  color: #21759b; border-color: rgba(33,117,155,0.25); }
 .tag-wordpress i { color: #21759b; }
 
-.project-actions { display: flex; gap: var(--sp-sm); }
+.project-actions { 
+  display: flex; 
+  gap: var(--sp-sm); 
+}
 
 .project-visual { position: relative; border-radius: var(--r-xl); overflow: hidden; }
 .project-screen {
