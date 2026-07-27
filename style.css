@@ -1716,19 +1716,52 @@ html.dark .theme-btn #iconMoon { display: block; }
   color: var(--clr-accent-glow); 
   pointer-events: none;
 }
-.testi-stars { display: flex; gap: 4px; margin-bottom: var(--sp-sm); }
-.testi-stars i { color: #f59e0b; font-size: 0.85rem; }
-.testi-card > p { font-size: var(--fz-sm); color: var(--clr-text-2); line-height: 1.8; margin-bottom: var(--sp-md); font-style: italic; font-weight: 400; }
-.testi-author { display: flex; align-items: center; gap: 12px; }
-.testi-avatar {
-  width: 44px; height: 44px; border-radius: 50%;
-  background: linear-gradient(135deg, var(--clr-accent), var(--clr-accent-dim));
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-main); font-weight: 700; font-size: var(--fz-sm);
-  color: #fff; flex-shrink: 0;
+.testi-stars { 
+  display: flex; 
+  gap: 4px; 
+  margin-bottom: var(--sp-sm); 
 }
-.testi-author strong { display: block; font-weight: 700; font-size: var(--fz-sm); }
-.testi-author small  { color: var(--clr-text-3); font-size: var(--fz-xs); font-weight: 400; }
+.testi-stars i { 
+  color: #f59e0b; 
+  font-size: 0.85rem; 
+}
+.testi-card > p { 
+  font-size: var(--fz-sm); 
+  color: var(--clr-text-2); 
+  line-height: 1.8; 
+  margin-bottom: var(--sp-md); 
+  font-style: italic; 
+  font-weight: 400; 
+}
+.testi-author { 
+  display: flex; 
+  align-items: center; 
+  gap: 12px; 
+}
+.testi-avatar {
+  width: 44px; 
+  height: 44px; 
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--clr-accent), var(--clr-accent-dim));
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  font-family: var(--font-main); 
+  font-weight: 700; 
+  font-size: var(--fz-sm);
+  color: #fff; 
+  flex-shrink: 0;
+}
+.testi-author strong { 
+  display: block; 
+  font-weight: 700; 
+  font-size: var(--fz-sm); 
+}
+.testi-author small  { 
+  color: var(--clr-text-3); 
+  font-size: var(--fz-xs); 
+  font-weight: 400; 
+}
 
 /* ==========================================================================
    CTA
