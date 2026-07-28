@@ -1974,13 +1974,22 @@ html.dark .theme-btn #iconMoon { display: block; }
   flex-direction: column; 
   gap: 6px;
 }
-.form-field label { font-family: var(--font-main); font-size: var(--fz-sm); font-weight: 600; color: var(--clr-text-1); }
+.form-field label { 
+  font-family: var(--font-main); 
+  font-size: var(--fz-sm); 
+  font-weight: 600; 
+  color: var(--clr-text-1); 
+}
 .form-field input,
 .form-field textarea {
-  width: 100%; padding: 13px 16px;
-  background: var(--clr-bg); border: 1.5px solid var(--clr-border);
-  border-radius: var(--r-md); font-family: var(--font-main);
-  font-size: var(--fz-sm); color: var(--clr-text-1);
+  width: 100%; 
+  padding: 13px 16px;
+  background: var(--clr-bg); 
+  border: 1.5px solid var(--clr-border);
+  border-radius: var(--r-md); 
+  font-family: var(--font-main);
+  font-size: var(--fz-sm); 
+  color: var(--clr-text-1);
   transition: border-color 0.25s, box-shadow 0.25s, background 0.25s; outline: none;
 }
 .form-field input::placeholder,
