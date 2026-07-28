@@ -1163,12 +1163,28 @@ html.dark .theme-btn #iconMoon { display: block; }
   color: #fff; 
   transform: rotate(-10deg) scale(1.1);
 }
-.service-card h3 { font-size: var(--fz-md); font-weight: 700; color: var(--clr-text-1); }
-.service-card p  { font-size: var(--fz-sm); color: var(--clr-text-2); line-height: 1.7; flex: 1; font-weight: 400; }
+.service-card h3 { 
+  font-size: var(--fz-md); 
+  font-weight: 700; 
+  color: var(--clr-text-1); 
+}
+.service-card p  { 
+  font-size: var(--fz-sm); 
+  color: var(--clr-text-2); 
+  line-height: 1.7; 
+  flex: 1; 
+  font-weight: 400;
+}
 .sc-btn {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-family: var(--font-main); font-size: var(--fz-sm); font-weight: 700;
-  color: var(--clr-accent); padding: 0; margin-top: auto;
+  display: inline-flex; 
+  align-items: center; 
+  gap: 6px;
+  font-family: var(--font-main); 
+  font-size: var(--fz-sm); 
+  font-weight: 700;
+  color: var(--clr-accent); 
+  padding: 0; 
+  margin-top: auto;
   transition: gap 0.25s var(--ease-spring);
 }
 .sc-btn:hover { gap: 10px; }
