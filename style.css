@@ -1921,25 +1921,59 @@ html.dark .theme-btn #iconMoon { display: block; }
   line-height: 1; 
   margin-bottom: 2px; 
 }
-.cd-item strong { font-size: var(--fz-sm); font-weight: 600; color: var(--clr-text-1); }
+.cd-item strong { 
+  font-size: var(--fz-sm); 
+  font-weight: 600; 
+  color: var(--clr-text-1); 
+}
 
-.contact-socials { display: flex; gap: 12px; }
+.contact-socials { 
+  display: flex; 
+  gap: 12px; 
+}
 .cs-link {
-  width: 44px; height: 44px; border-radius: 50%;
-  background: var(--clr-surface); border: 1.5px solid var(--clr-border);
+  width: 44px; 
+  height: 44px; 
+  border-radius: 50%;
+  background: var(--clr-surface); 
+  border: 1.5px solid var(--clr-border);
   color: var(--clr-text-2);
-  display: flex; align-items: center; justify-content: center; font-size: 0.95rem;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 0.95rem;
   transition: background 0.25s, color 0.25s, transform 0.25s var(--ease-spring), border-color 0.25s, box-shadow 0.25s;
 }
-.cs-link:hover { background: var(--clr-accent); color: #fff; border-color: var(--clr-accent); transform: translateY(-4px); box-shadow: 0 6px 18px rgba(20,184,102,0.35); }
+.cs-link:hover { 
+  background: var(--clr-accent); 
+  color: #fff; 
+  border-color: var(--clr-accent); 
+  transform: translateY(-4px); 
+  box-shadow: 0 6px 18px rgba(20,184,102,0.35); 
+}
 
 .contact-form-wrap {
-  background: var(--clr-surface); border: 1px solid var(--clr-border);
-  border-radius: var(--r-xl); padding: var(--sp-xl); box-shadow: var(--shadow-md);
+  background: var(--clr-surface); 
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-xl); 
+  padding: var(--sp-xl); 
+  box-shadow: var(--shadow-md);
 }
-.contact-form { display: flex; flex-direction: column; gap: var(--sp-md); }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-md); }
-.form-field { display: flex; flex-direction: column; gap: 6px; }
+.contact-form { 
+  display: flex; 
+  flex-direction: column; 
+  gap: var(--sp-md); 
+}
+.form-row { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: var(--sp-md); 
+}
+.form-field { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 6px;
+}
 .form-field label { font-family: var(--font-main); font-size: var(--fz-sm); font-weight: 600; color: var(--clr-text-1); }
 .form-field input,
 .form-field textarea {
