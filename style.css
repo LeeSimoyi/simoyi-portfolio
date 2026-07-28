@@ -668,9 +668,14 @@ html.dark .theme-btn #iconMoon { display: block; }
   font-size: var(--fz-sm);
 }
 .hero-image-badge--compact {
-  top: 16px; right: -16px; padding: 5px 12px;
-  font-size: var(--fz-xs); border-radius: var(--r-full); gap: 5px;
-  animation-delay: 2s; animation-direction: reverse;
+  top: 16px; 
+  right: -16px; 
+  padding: 5px 12px;
+  font-size: var(--fz-xs); 
+  border-radius: var(--r-full); 
+  gap: 5px;
+  animation-delay: 2s; 
+  animation-direction: reverse;
 }
 .hero-image-badge--compact i { font-size: 0.75rem; }
 @keyframes badgeFloat {
