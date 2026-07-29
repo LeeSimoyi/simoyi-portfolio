@@ -2045,22 +2045,57 @@ html.dark .footer { background: #060e0b; }
   border-bottom: 1px solid rgba(255,255,255,0.08); 
   margin-bottom: var(--sp-lg);
 }
-.footer-logo { font-family: var(--font-main); font-size: 1.5rem; font-weight: 800; color: #fff; letter-spacing: -0.04em; }
+.footer-logo { 
+  font-family: var(--font-main); 
+  font-size: 1.5rem; 
+  font-weight: 800; 
+  color: #fff; 
+  letter-spacing: -0.04em; 
+}
 .footer-logo span { color: var(--clr-accent); }
-.footer-links { display: flex; flex-wrap: wrap; gap: var(--sp-md); }
-.footer-links a { font-family: var(--font-main); font-size: var(--fz-sm); font-weight: 600; color: rgba(255,255,255,0.6); transition: color 0.2s; }
+.footer-links { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: var(--sp-md); 
+}
+.footer-links a { 
+  font-family: var(--font-main); 
+  font-size: var(--fz-sm); 
+  font-weight: 600; 
+  color: rgba(255,255,255,0.6); 
+  transition: color 0.2s; 
+}
 .footer-links a:hover { color: var(--clr-accent); }
-.footer-socials { display: flex; gap: 10px; }
+.footer-socials { 
+  display: flex; 
+  gap: 10px; 
+}
 .footer-socials a {
-  width: 40px; height: 40px; border-radius: 50%;
-  background: rgba(255,255,255,0.07); border: 1.5px solid rgba(255,255,255,0.14);
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%;
+  background: rgba(255,255,255,0.07); 
+  border: 1.5px solid rgba(255,255,255,0.14);
   color: rgba(255,255,255,0.6);
-  display: flex; align-items: center; justify-content: center; font-size: 0.85rem;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-size: 0.85rem;
   transition: background 0.25s, color 0.25s, transform 0.25s var(--ease-spring), border-color 0.25s, box-shadow 0.25s;
 }
-.footer-socials a:hover { background: var(--clr-accent); border-color: var(--clr-accent); color: #fff; transform: translateY(-3px); box-shadow: 0 6px 18px rgba(20,184,102,0.35); }
+.footer-socials a:hover { 
+  background: var(--clr-accent); 
+  border-color: var(--clr-accent); 
+  color: #fff; 
+  transform: translateY(-3px); 
+  box-shadow: 0 6px 18px rgba(20,184,102,0.35); 
+}
 .footer-bottom { text-align: center; }
-.footer-bottom p { font-size: var(--fz-sm); color: rgba(255,255,255,0.4); font-weight: 400; }
+.footer-bottom p { 
+  font-size: var(--fz-sm); 
+  color: rgba(255,255,255,0.4); 
+  font-weight: 400; 
+}
 
 /* ==========================================================================
    TOAST
