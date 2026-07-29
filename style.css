@@ -2006,7 +2006,8 @@ html.dark .theme-btn #iconMoon { display: block; }
   font-family: var(--font-main);
   font-size: var(--fz-sm); 
   color: var(--clr-text-1);
-  transition: border-color 0.25s, box-shadow 0.25s, background 0.25s; outline: none;
+  transition: border-color 0.25s, box-shadow 0.25s, background 0.25s; 
+  outline: none;
 }
 .form-field input::placeholder,
 .form-field textarea::placeholder { color: var(--clr-text-3); }
@@ -2018,8 +2019,12 @@ html.dark .theme-btn #iconMoon { display: block; }
 .form-field input.input--valid,
 .form-field textarea.input--valid { border-color: var(--clr-accent) !important; }
 .field-error {
-  display: flex; align-items: center; gap: 5px;
-  font-size: var(--fz-xs); color: #ef4444; font-weight: 500;
+  display: flex; 
+  align-items: center; 
+  gap: 5px;
+  font-size: var(--fz-xs); 
+  color: #ef4444; 
+  font-weight: 500;
   margin-top: 2px; animation: errorFadeIn 0.25s var(--ease-out);
 }
 .field-error i { font-size: 0.68rem; flex-shrink: 0; }
@@ -2031,9 +2036,14 @@ html.dark .theme-btn #iconMoon { display: block; }
 .footer { background: var(--clr-text-1); padding: var(--sp-xl) 0 var(--sp-lg); }
 html.dark .footer { background: #060e0b; }
 .footer-inner {
-  display: flex; align-items: center; justify-content: space-between;
-  flex-wrap: wrap; gap: var(--sp-md); padding-bottom: var(--sp-lg);
-  border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: var(--sp-lg);
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  gap: var(--sp-md); 
+  padding-bottom: var(--sp-lg);
+  border-bottom: 1px solid rgba(255,255,255,0.08); 
+  margin-bottom: var(--sp-lg);
 }
 .footer-logo { font-family: var(--font-main); font-size: 1.5rem; font-weight: 800; color: #fff; letter-spacing: -0.04em; }
 .footer-logo span { color: var(--clr-accent); }
