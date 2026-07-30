@@ -2150,8 +2150,15 @@ html.dark .footer { background: #060e0b; }
   transition: opacity 0.35s, visibility 0.35s, transform 0.35s var(--ease-spring), background 0.25s;
   z-index: 900;
 }
-.scroll-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
-.scroll-top:hover   { background: var(--clr-accent-dim); transform: translateY(-3px); }
+.scroll-top.visible { 
+  opacity: 1; 
+  visibility: visible; 
+  transform: translateY(0); 
+}
+.scroll-top:hover   { 
+  background: var(--clr-accent-dim); 
+  transform: translateY(-3px); 
+}
 .scroll-top i { animation: arrowBounce 1.5s ease-in-out infinite; }
 @keyframes arrowBounce { 0%,100%{transform:translateY(0);}50%{transform:translateY(-4px);} }
 
