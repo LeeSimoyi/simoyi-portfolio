@@ -2176,11 +2176,18 @@ html.dark .footer { background: #060e0b; }
   .project-row--reverse .project-visual  { order: 2; }
 
   .hero-layout {
-    grid-template-columns: 1fr; justify-items: center; text-align: center;
-    gap: var(--sp-xl); padding-top: var(--sp-xl);
-    padding-bottom: calc(var(--sp-xl) + 40px); min-height: auto;
+    grid-template-columns: 1fr; 
+    justify-items: center; 
+    text-align: center;
+    gap: var(--sp-xl); 
+    padding-top: var(--sp-xl);
+    padding-bottom: calc(var(--sp-xl) + 40px); 
+    min-height: auto;
   }
-  .hero-content { align-items: center; max-width: 700px; }
+  .hero-content { 
+    align-items: center; 
+    max-width: 700px; 
+  }
   .hero-sub { max-width: 100%; }
   .hero-stats { justify-content: center; }
   .hero-image-wrap { width: clamp(260px, 45vw, 360px); }
@@ -2192,18 +2199,29 @@ html.dark .footer { background: #060e0b; }
   .hamburger  { display: flex; }
 
   .nav-close-item {
-    display: flex; align-items: flex-start; width: 100%;
-    padding: 0 0 var(--sp-md); border-bottom: 1px solid var(--clr-border);
+    display: flex; 
+    align-items: flex-start; 
+    width: 100%;
+    padding: 0 0 var(--sp-md); 
+    border-bottom: 1px solid var(--clr-border);
     margin-bottom: var(--sp-xs);
   }
   .nav-menu {
-    position: fixed; top: 0; right: -100%;
-    width: min(320px, 85vw); height: 100vh;
-    background: var(--clr-surface); flex-direction: column;
-    align-items: flex-start; gap: 0; padding: var(--sp-lg);
+    position: fixed; 
+    top: 0; 
+    right: -100%;
+    width: min(320px, 85vw); 
+    height: 100vh;
+    background: var(--clr-surface); 
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 0; 
+    padding: var(--sp-lg);
     box-shadow: -10px 0 50px rgba(0,0,0,0.12);
     transition: right 0.45s var(--ease);
-    z-index: 1950; border-left: 1px solid var(--clr-border); overflow-y: auto;
+    z-index: 1950; 
+    border-left: 1px solid var(--clr-border); 
+    overflow-y: auto;
   }
   .nav-menu.open { right: 0; }
   .nav-menu li { width: 100%; border-bottom: 1px solid var(--clr-border); }
