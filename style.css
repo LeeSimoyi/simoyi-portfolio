@@ -2298,8 +2298,18 @@ html.dark .footer { background: #060e0b; }
   .skill-bar { margin-bottom: 10px; }
 
   /* Hero */
-  .hero { min-height: 100svh; align-items: flex-start; padding-top: 64px; }
-  .hero-layout { grid-template-columns: 1fr; text-align: center; padding-top: clamp(1.5rem,6vw,2.5rem); padding-bottom: clamp(4rem,12vw,5rem); gap: var(--sp-lg); }
+  .hero { 
+    min-height: 100svh; 
+    align-items: flex-start; 
+    padding-top: 64px; 
+  }
+  .hero-layout { 
+    grid-template-columns: 1fr; 
+    text-align: center; 
+    padding-top: clamp(1.5rem,6vw,2.5rem); 
+    padding-bottom: clamp(4rem,12vw,5rem); 
+    gap: var(--sp-lg); 
+  }
   .hero-content { align-items: center; }
   .hero-title { font-size: clamp(2.1rem, 9vw, 3rem); line-height: 1.08; }
   .hero-sub { font-size: var(--fz-base); max-width: 100%; }
