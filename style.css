@@ -1190,7 +1190,11 @@ html.dark .theme-btn #iconMoon { display: block; }
 .sc-btn:hover { gap: 10px; }
 .sc-btn i { font-size: 0.75rem; }
 .sc-line {
-  position: absolute; bottom: 0; left: 0; width: 0; height: 3px;
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 0; 
+  height: 3px;
   background: var(--clr-accent);
   transition: width 0.4s var(--ease);
   border-radius: 0 var(--r-full) var(--r-full) 0;
