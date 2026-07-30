@@ -2133,11 +2133,20 @@ html.dark .footer { background: #060e0b; }
    SCROLL TO TOP
    ========================================================================== */
 .scroll-top {
-  position: fixed; bottom: 28px; right: 28px;
-  width: 48px; height: 48px; border-radius: 50%;
-  background: var(--clr-accent); color: #fff; border: none;
-  box-shadow: 0 6px 20px rgba(20,184,102,0.4); font-size: 0.9rem;
-  opacity: 0; visibility: hidden; transform: translateY(12px);
+  position: fixed; 
+  bottom: 28px; 
+  right: 28px;
+  width: 48px; 
+  height: 48px; 
+  border-radius: 50%;
+  background: var(--clr-accent); 
+  color: #fff; 
+  border: none;
+  box-shadow: 0 6px 20px rgba(20,184,102,0.4); 
+  font-size: 0.9rem;
+  opacity: 0; 
+  visibility: hidden; 
+  transform: translateY(12px);
   transition: opacity 0.35s, visibility 0.35s, transform 0.35s var(--ease-spring), background 0.25s;
   z-index: 900;
 }
