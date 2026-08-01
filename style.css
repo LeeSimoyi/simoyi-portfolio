@@ -2386,8 +2386,19 @@ html.dark .footer { background: #060e0b; }
     gap: 10px;
   }
   .hero-actions .btn-primary,
-  .hero-actions .btn-ghost--hero { width: 100%; justify-content: center; padding: 14px 20px; font-size: var(--fz-base); }
-  .hero-stats { gap: var(--sp-md); flex-wrap: nowrap; justify-content: center; width: 100%; padding-top: var(--sp-sm); }
+  .hero-actions .btn-ghost--hero { 
+    width: 100%; 
+    justify-content: center; 
+    padding: 14px 20px; 
+    font-size: var(--fz-base); 
+  }
+  .hero-stats { 
+     gap: var(--sp-md); 
+     flex-wrap: nowrap; 
+     justify-content: center; 
+     width: 100%; 
+     padding-top: var(--sp-sm); 
+  }
   .stat-item strong { font-size: 1.25rem; }
   .stat-item span   { font-size: 0.7rem; }
   .stat-divider     { height: 32px; }
