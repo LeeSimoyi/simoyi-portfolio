@@ -2290,7 +2290,11 @@ html.dark .footer { background: #060e0b; }
 
   /* Timeline header */
   .timeline-card-header h4 { font-size: var(--fz-base); }
-  .tcard-icon { width: 36px; height: 36px; font-size: 0.85rem; }
+  .tcard-icon { 
+    width: 36px; 
+    height: 36px; 
+    font-size: 0.85rem; 
+  }
 
   /* Soft skills — 3 per row, smaller circles */
   .soft-skills-grid {
@@ -2304,7 +2308,10 @@ html.dark .footer { background: #060e0b; }
   .soft-skill-label i { font-size: 0.55rem; }
 
   /* Skill bars */
-  .skill-card-title { font-size: var(--fz-sm); margin-bottom: var(--sp-sm); }
+  .skill-card-title { 
+    font-size: var(--fz-sm); 
+    margin-bottom: var(--sp-sm); 
+  }
   .sb-head { font-size: var(--fz-xs); }
   .skill-bar { margin-bottom: 10px; }
 
