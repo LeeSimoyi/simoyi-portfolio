@@ -1,30 +1,13 @@
-/* ==========================================================================
-   SIMOYI LEE — PORTFOLIO JAVASCRIPT
-   Organized into clear modules for easy reading and maintenance
-   ========================================================================== */
 
 (function () {
   "use strict";
 
   /* ==========================================================================
-     1. PAGE LOADER
-     ========================================================================== */
-  const loader = document.getElementById("pageLoader");
-
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-      loader?.classList.add("hidden");
-    }, 2000);
-  });
-
-  /* ==========================================================================
-     2. DARK MODE TOGGLE
-     Reads/writes to localStorage, applies class to <html>
+     DARK MODE TOGGLE
      ========================================================================== */
   const themeBtn = document.getElementById("themeBtn");
   const htmlEl   = document.documentElement;
 
-  // Apply saved preference immediately (prevents flash)
   if (localStorage.getItem("theme") === "dark") {
     htmlEl.classList.add("dark");
   }
@@ -35,20 +18,16 @@
   });
 
   /* ==========================================================================
-     3. NAVBAR
-     – Scrolled state
-     – Active link highlighting
-     – Mobile menu open/close
+     NAVBAR
      ========================================================================== */
-  const navbar     = document.getElementById("navbar");
-  const hamburger  = document.getElementById("hamburger");
-  const navMenu    = document.getElementById("navMenu");
-  const navOverlay = document.getElementById("navOverlay");
-  const navCloseBtn= document.getElementById("navCloseBtn");
-  const navLinks   = document.querySelectorAll(".nav-link");
-  const sections   = document.querySelectorAll("section[id]");
+  const navbar      = document.getElementById("navbar");
+  const hamburger   = document.getElementById("hamburger");
+  const navMenu     = document.getElementById("navMenu");
+  const navOverlay  = document.getElementById("navOverlay");
+  const navCloseBtn = document.getElementById("navCloseBtn");
+  const navLinks    = document.querySelectorAll(".nav-link");
+  const sections    = document.querySelectorAll("section[id]");
 
-  // Open mobile menu
   const openMenu = () => {
     hamburger.classList.add("open");
     navMenu.classList.add("open");
@@ -56,7 +35,6 @@
     document.body.classList.add("no-scroll");
   };
 
-  // Close mobile menu
   const closeMenu = () => {
     hamburger.classList.remove("open");
     navMenu.classList.remove("open");
@@ -66,25 +44,13 @@
 
   hamburger?.addEventListener("click", openMenu);
   navOverlay?.addEventListener("click", closeMenu);
-
-  // Close button inside menu panel
   navCloseBtn?.addEventListener("click", closeMenu);
-
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeMenu(); });
-
-  // Close menu when a nav link is clicked
   navLinks.forEach(link => link.addEventListener("click", closeMenu));
 
-  // Scrolled state + active section highlighting
   const handleScroll = () => {
-    // Scrolled class
-    if (window.scrollY > 60) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
+    navbar.classList.toggle("scrolled", window.scrollY > 60);
 
-    // Active section
     let current = "";
     sections.forEach(section => {
       const rect = section.getBoundingClientRect();
@@ -99,52 +65,11 @@
   };
 
   window.addEventListener("scroll", handleScroll, { passive: true });
-  handleScroll(); // Run on load
+  handleScroll();
+
 
   /* ==========================================================================
-     4. CUSTOM CURSOR
-     ========================================================================== */
-  const cursor         = document.getElementById("cursor");
-  const cursorFollower = document.getElementById("cursorFollower");
-  let followerX = 0, followerY = 0;
-  let cursorX   = 0, cursorY   = 0;
-
-  const animateCursor = () => {
-    followerX += (cursorX - followerX) * 0.12;
-    followerY += (cursorY - followerY) * 0.12;
-
-    if (cursor) {
-      cursor.style.left = `${cursorX}px`;
-      cursor.style.top  = `${cursorY}px`;
-    }
-    if (cursorFollower) {
-      cursorFollower.style.left = `${followerX}px`;
-      cursorFollower.style.top  = `${followerY}px`;
-    }
-
-    requestAnimationFrame(animateCursor);
-  };
-
-  document.addEventListener("mousemove", (e) => {
-    cursorX = e.clientX;
-    cursorY = e.clientY;
-  });
-
-  // Hover effect on interactive elements
-  const hoverTargets = document.querySelectorAll("a, button, [data-service]");
-  hoverTargets.forEach(el => {
-    el.addEventListener("mouseenter", () => cursorFollower?.classList.add("hover"));
-    el.addEventListener("mouseleave", () => cursorFollower?.classList.remove("hover"));
-  });
-
-  // Only run cursor on pointer devices
-  if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
-    animateCursor();
-  }
-
-  /* ==========================================================================
-     5. SCROLL REVEAL
-     Uses IntersectionObserver for performance
+     SCROLL REVEAL
      ========================================================================== */
   const revealEls = document.querySelectorAll(".reveal");
 
@@ -152,7 +77,7 @@
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("active");
-        revealObserver.unobserve(entry.target); // Animate once
+        revealObserver.unobserve(entry.target);
       }
     });
   }, { threshold: 0.12 });
@@ -160,8 +85,7 @@
   revealEls.forEach(el => revealObserver.observe(el));
 
   /* ==========================================================================
-     6. SKILL BARS
-     Animate bars when they scroll into view
+     SKILL BARS
      ========================================================================== */
   const skillBars = document.querySelectorAll(".skill-bar");
 
@@ -181,7 +105,7 @@
   skillBars.forEach(bar => barObserver.observe(bar));
 
   /* ==========================================================================
-     7. ANIMATED COUNTERS
+     ANIMATED COUNTERS
      ========================================================================== */
   const counters = document.querySelectorAll(".counter");
 
@@ -210,7 +134,7 @@
   counters.forEach(c => countObserver.observe(c));
 
   /* ==========================================================================
-     8. SERVICES MODAL
+     SERVICES MODAL
      ========================================================================== */
   const serviceData = {
     web: {
@@ -250,18 +174,17 @@
     const data = serviceData[serviceKey];
     if (!data) return;
 
-    modalImg.src              = data.img;
-    modalImg.alt              = data.title;
-    modalTitle.textContent    = data.title;
-    modalDesc.textContent     = data.desc;
-    modalList.innerHTML       = data.items
+    modalImg.src           = data.img;
+    modalImg.alt           = data.title;
+    modalTitle.textContent = data.title;
+    modalDesc.textContent  = data.desc;
+    modalList.innerHTML    = data.items
       .map(item => `<li><i class="fa-solid fa-circle-check"></i>${item}</li>`)
       .join("");
 
     modalBackdrop.classList.add("active");
     document.body.classList.add("no-scroll");
 
-    // Scroll modal to top on re-open
     const card = modalBackdrop.querySelector(".modal-card");
     if (card) card.scrollTop = 0;
   };
@@ -271,7 +194,6 @@
     document.body.classList.remove("no-scroll");
   };
 
-  // Delegate click to service cards
   document.querySelectorAll(".service-card").forEach(card => {
     card.querySelector(".sc-btn")?.addEventListener("click", () => {
       openModal(card.dataset.service);
@@ -287,7 +209,7 @@
   });
 
   /* ==========================================================================
-     9. SCROLL TO TOP BUTTON
+     SCROLL TO TOP BUTTON
      ========================================================================== */
   const scrollTopBtn = document.getElementById("scrollTop");
 
@@ -300,7 +222,7 @@
   });
 
   /* ==========================================================================
-     10. CONTACT FORM (EmailJS)
+     CONTACT FORM — validation + EmailJS
      ========================================================================== */
   emailjs.init("5IkvlnetHiJWb9jGd");
 
@@ -309,22 +231,24 @@
   const toast       = document.getElementById("toast");
   const toastTitle  = document.getElementById("toastTitle");
   const toastMsg    = document.getElementById("toastMsg");
+  const toastIcon   = document.getElementById("toastIcon");
+  const toastProg   = document.getElementById("toastProgress");
 
+  /* Toast helper */
   const showToast = (title, message, isError = false) => {
-    // Reset progress animation
-    const progress = toast.querySelector(".toast-progress");
-    if (progress) {
-      progress.style.animation = "none";
-      progress.offsetHeight; // Reflow
-      progress.style.animation = "";
-      progress.style.background = isError ? "#ef4444" : "";
+    if (toastProg) {
+      toastProg.style.animation = "none";
+      void toastProg.offsetWidth;
+      toastProg.style.animation  = "";
     }
-    toast.style.borderLeftColor = isError ? "#ef4444" : "";
-    toast.querySelector(".toast-icon i").className = isError
-      ? "fa-solid fa-circle-xmark"
-      : "fa-solid fa-circle-check";
-    toast.querySelector(".toast-icon").style.color      = isError ? "#ef4444" : "";
-    toast.querySelector(".toast-icon").style.background = isError ? "rgba(239,68,68,0.12)" : "";
+
+    toast.classList.toggle("toast--error", isError);
+
+    if (toastIcon) {
+      toastIcon.className = isError
+        ? "fa-solid fa-triangle-exclamation"
+        : "fa-solid fa-circle-check";
+    }
 
     toastTitle.textContent = title;
     toastMsg.innerHTML     = message;
@@ -333,13 +257,99 @@
     setTimeout(() => toast.classList.remove("show"), 4800);
   };
 
+  /* Validation helpers */
+  const getField = (id) => document.getElementById(id);
+
+  const setError = (input, message) => {
+    input.classList.add("input--error");
+    input.classList.remove("input--valid");
+
+    const existing = input.parentElement.querySelector(".field-error");
+    if (existing) existing.remove();
+
+    const err = document.createElement("span");
+    err.className = "field-error";
+    err.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i>${message}`;
+    input.parentElement.appendChild(err);
+  };
+
+  const clearError = (input) => {
+    input.classList.remove("input--error");
+    const existing = input.parentElement.querySelector(".field-error");
+    if (existing) existing.remove();
+  };
+
+  const setValid = (input) => {
+    clearError(input);
+    input.classList.add("input--valid");
+  };
+
+  const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  const validateForm = () => {
+    const nameEl    = getField("user_name");
+    const emailEl   = getField("user_email");
+    const messageEl = getField("message");
+    let valid = true;
+
+    if (!nameEl.value.trim()) {
+      setError(nameEl, "Please enter your full name.");
+      valid = false;
+    } else {
+      setValid(nameEl);
+    }
+
+    if (!emailEl.value.trim()) {
+      setError(emailEl, "Please enter your email address.");
+      valid = false;
+    } else if (!isValidEmail(emailEl.value.trim())) {
+      setError(emailEl, "Please enter a valid email address.");
+      valid = false;
+    } else {
+      setValid(emailEl);
+    }
+
+    if (!messageEl.value.trim()) {
+      setError(messageEl, "Please write a message before sending.");
+      valid = false;
+    } else if (messageEl.value.trim().length < 10) {
+      setError(messageEl, "Message is too short (min 10 characters).");
+      valid = false;
+    } else {
+      setValid(messageEl);
+    }
+
+    return valid;
+  };
+
+  ["user_name", "user_email", "message"].forEach(id => {
+    const el = getField(id);
+    if (!el) return;
+
+    el.addEventListener("input", () => {
+      if (el.classList.contains("input--error")) clearError(el);
+    });
+
+    el.addEventListener("blur", () => {
+      if (id === "user_name" && el.value.trim()) setValid(el);
+      if (id === "user_email" && isValidEmail(el.value.trim())) setValid(el);
+      if (id === "message" && el.value.trim().length >= 10) setValid(el);
+    });
+  });
+
   contactForm?.addEventListener("submit", (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      sendBtn.style.animation = "none";
+      void sendBtn.offsetWidth;
+      sendBtn.style.animation = "btnShake 0.4s var(--ease)";
+      return;
+    }
 
     const name  = contactForm.user_name.value.trim();
     const email = contactForm.user_email.value.trim();
 
-    // Button loading state
     const btnText = sendBtn.querySelector(".btn-text");
     const btnIcon = sendBtn.querySelector("i");
     sendBtn.disabled    = true;
@@ -348,11 +358,22 @@
 
     emailjs.sendForm("service_xw7noct", "template_tgke9ss", contactForm)
       .then(() => {
-        showToast("Message Sent! 🎉", `Thanks <strong>${name}</strong>! We'll reply to <strong>${email}</strong> soon.`);
+        showToast(
+          "Message Sent!",
+          `Thanks <strong>${name}</strong>! We'll reply to <strong>${email}</strong> soon.`
+        );
         contactForm.reset();
+        ["user_name", "user_email", "message"].forEach(id => {
+          const el = getField(id);
+          if (el) el.classList.remove("input--valid", "input--error");
+        });
       })
       .catch(() => {
-        showToast("Failed to Send", "Something went wrong. Please try again or email directly.", true);
+        showToast(
+          "Failed to Send",
+          "Something went wrong. Please try again or email directly.",
+          true
+        );
       })
       .finally(() => {
         sendBtn.disabled    = false;
@@ -362,7 +383,7 @@
   });
 
   /* ==========================================================================
-     11. SMOOTH MARQUEE — pause on hover
+     SMOOTH MARQUEE — pause on hover
      ========================================================================== */
   const marqueeTrack = document.querySelector(".marquee-track");
   if (marqueeTrack) {
@@ -374,4 +395,4 @@
     });
   }
 
-})(); // End IIFE
+})();
