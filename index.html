@@ -19,19 +19,7 @@
 </head>
 <body>
 
-  <!-- ─── CURSOR ─── -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-follower" id="cursorFollower"></div>
-
-  <!-- ─── LOADER ─── -->
-  <div class="page-loader" id="pageLoader">
-    <div class="loader-inner">
-      <span class="loader-name">Simoyi<span>.</span></span>
-      <div class="loader-bar"><span></span></div>
-    </div>
-  </div>
-
-  <!-- ─── NAVBAR ─── -->
+  <!-- Navbar -->
   <div class="nav-overlay" id="navOverlay"></div>
   <header class="navbar" id="navbar">
     <nav class="nav-inner">
@@ -43,12 +31,12 @@
             <i class="fa-solid fa-xmark"></i>
           </button>
         </li>
-        <li><a href="#home"      class="nav-link active">Home</a></li>
-        <li><a href="#about"     class="nav-link">About</a></li>
-        <li><a href="#skills"    class="nav-link">Skills</a></li>
-        <li><a href="#services"  class="nav-link">Services</a></li>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
         <li><a href="#portfolio" class="nav-link">Work</a></li>
-        <li><a href="#contact"   class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
       <div class="nav-actions">
@@ -64,20 +52,16 @@
     </nav>
   </header>
 
-  <!-- ─── HERO ─── -->
+  <!-- HERO SECTION -->
   <section id="home" class="hero">
     <div class="hero-bg">
       <div class="hero-blob hero-blob--1"></div>
       <div class="hero-blob hero-blob--2"></div>
-      <div class="hero-grid"></div>
     </div>
 
     <div class="hero-layout">
-      <!-- LEFT: Text content -->
+      
       <div class="hero-content reveal">
-        <div class="hero-badge">
-          <span class="badge-dot"></span>Available for Freelance Projects
-        </div>
 
         <h1 class="hero-title">
           Building <span class="hero-highlight">Digital</span>
@@ -116,7 +100,7 @@
         </div>
       </div>
 
-      <!-- RIGHT: Image -->
+      
       <div class="hero-image-wrap reveal reveal-right">
         <div class="hero-image-ring"></div>
         <div class="hero-image-ring hero-image-ring--2"></div>
@@ -135,7 +119,7 @@
     </div>
 
     <!-- Scroll indicator -->
-    <a href="#about" class="hero-scroll">
+    <a href="#about" class="hero-scroll" id="heroScroll">
       <div class="hero-scroll-mouse">
         <div class="hero-scroll-wheel"></div>
       </div>
@@ -143,7 +127,7 @@
     </a>
   </section>
 
-  <!-- ─── MARQUEE STRIP ─── -->
+  <!-- MARQUEE STRIP -->
   <div class="marquee-strip">
     <div class="marquee-track">
       <span>HTML5</span><span class="dot">·</span>
@@ -169,7 +153,7 @@
     </div>
   </div>
 
-  <!-- ─── ABOUT ─── -->
+  <!-- ABOUT SECTION -->
   <section id="about" class="about section">
     <div class="container">
       <div class="section-tag reveal"><span>About Me</span></div>
@@ -232,7 +216,7 @@
     </div>
   </section>
 
-  <!-- ─── SKILLS ─── -->
+  <!-- SKILLS SECTION -->
   <section id="skills" class="skills section">
     <div class="container">
       <div class="section-tag reveal"><span>My Skills</span></div>
@@ -343,7 +327,7 @@
     </div>
   </section>
 
-  <!-- ─── SERVICES ─── -->
+  <!-- SERVICES SECTION -->
   <section id="services" class="services section">
     <div class="container">
       <div class="section-tag reveal"><span>What I Do</span></div>
@@ -400,7 +384,7 @@
     </div>
   </section>
 
-  <!-- ─── SERVICES MODAL ─── -->
+  <!-- SERVICES MODAL -->
   <div class="modal-backdrop" id="serviceModal">
     <div class="modal-card">
       <button class="modal-close" id="modalClose" aria-label="Close modal">
@@ -419,7 +403,7 @@
     </div>
   </div>
 
-  <!-- ─── WHY HIRE ME ─── -->
+  <!-- WHY HIRE ME -->
   <section id="highlights" class="highlights section">
     <div class="container">
       <div class="section-tag reveal"><span>Why Hire Me</span></div>
@@ -472,7 +456,7 @@
     </div>
   </section>
 
-  <!-- ─── PORTFOLIO ─── -->
+  <!-- PORTFOLIO SECTION -->
   <section id="portfolio" class="portfolio section">
     <div class="container">
       <div class="section-tag reveal"><span>My Work</span></div>
@@ -494,12 +478,12 @@
             sections, a booking experience, and a fully responsive layout.
           </p>
           <div class="project-tags">
-            <span><i class="fa-brands fa-html5"></i> HTML5</span>
-            <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="tag-html"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="tag-css"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="tag-js"><i class="fa-brands fa-js"></i> JavaScript</span>
           </div>
           <div class="project-actions">
-            <a href="https://leehaircut-barbershop.vercel.app" target="_blank" class="btn-primary">
+            <a href="https://lee-hair-cut-premium-barbershop.vercel.app" target="_blank" class="btn-primary">
               Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
           </div>
@@ -525,9 +509,9 @@
             elegant animations, and a customer-first UX approach.
           </p>
           <div class="project-tags">
-            <span><i class="fa-brands fa-html5"></i> HTML5</span>
-            <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="tag-html"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="tag-css"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="tag-js"><i class="fa-brands fa-js"></i> JavaScript</span>
           </div>
           <div class="project-actions">
             <a href="https://lee-car-rental.vercel.app" target="_blank" class="btn-primary">
@@ -545,7 +529,7 @@
     </div>
   </section>
 
-  <!-- ─── TESTIMONIALS ─── -->
+  <!-- TESTIMONIALS SECTION -->
   <section id="testimonials" class="testimonials section">
     <div class="container">
       <div class="section-tag reveal"><span>Kind Words</span></div>
@@ -603,24 +587,28 @@
     </div>
   </section>
 
-  <!-- ─── CTA ─── -->
+  <!-- CTA SECTION -->
   <section class="cta section">
     <div class="container">
       <div class="cta-inner reveal">
-        <div class="cta-badge-sm">
-          <i class="fa-solid fa-circle-check"></i> Open to work
-        </div>
-        <h2>Have a project in mind?<br><em>Let's build it together.</em></h2>
-        <p>I design and develop clean, fast, and professional web experiences that convert visitors into customers.</p>
-        <div class="cta-actions">
-          <a href="#contact" class="btn-primary">Start a Project <i class="fa-solid fa-rocket"></i></a>
-          <a href="#portfolio" class="btn-ghost">See My Work <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="cta-bg-image"></div>
+        <div class="cta-overlay"></div>
+        <div class="cta-content">
+          <div class="cta-badge-sm">
+            <i class="fa-solid fa-circle-check"></i> Open to work
+          </div>
+          <h2>Have a project in mind?<br><em>Let's build it together.</em></h2>
+          <p>I design and develop clean, fast, and professional web experiences that convert visitors into customers.</p>
+          <div class="cta-actions">
+            <a href="#contact" class="btn-primary">Start a Project <i class="fa-solid fa-rocket"></i></a>
+            <a href="#portfolio" class="btn-ghost">See My Work <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── CONTACT ─── -->
+  <!-- CONTACT SECTION -->
   <section id="contact" class="contact section">
     <div class="container">
       <div class="section-tag reveal"><span>Get In Touch</span></div>
@@ -676,11 +664,11 @@
             <div class="form-row">
               <div class="form-field">
                 <label for="user_name">Full Name</label>
-                <input type="text" id="user_name" name="user_name" placeholder="John Doe" required />
+                <input type="text" id="user_name" name="user_name" placeholder="Enter Your Full Name" required />
               </div>
               <div class="form-field">
                 <label for="user_email">Email Address</label>
-                <input type="email" id="user_email" name="user_email" placeholder="john@example.com" required />
+                <input type="email" id="user_email" name="user_email" placeholder="Enter Your Email Address" required />
               </div>
             </div>
             <div class="form-field">
@@ -701,7 +689,7 @@
     </div>
   </section>
 
-  <!-- ─── FOOTER ─── -->
+  <!-- FOOTER SECTION -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
@@ -724,22 +712,26 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© 2026 Simoyi Lee. Designed & Built with <i class="fa-solid fa-heart"></i> in New Delhi.</p>
+        <p>© 2026 Simoyi Lee — Crafted with code & creativity.</p>
       </div>
     </div>
   </footer>
 
-  <!-- ─── TOAST ─── -->
+  <!-- TOAST MESSAGE -->
   <div class="toast" id="toast">
-    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
-    <div class="toast-body">
-      <strong id="toastTitle">Message Sent!</strong>
-      <p id="toastMsg"></p>
+    <div class="toast-inner">
+      <div class="toast-icon">
+        <i class="fa-solid fa-circle-check" id="toastIcon"></i>
+      </div>
+      <div class="toast-body">
+        <strong id="toastTitle">Message Sent!</strong>
+        <p id="toastMsg"></p>
+      </div>
     </div>
-    <div class="toast-progress"></div>
+    <div class="toast-progress" id="toastProgress"></div>
   </div>
 
-  <!-- ─── SCROLL TO TOP ─── -->
+  <!-- SCROLL TO TOP -->
   <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
