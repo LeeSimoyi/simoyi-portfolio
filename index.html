@@ -10,7 +10,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -19,7 +19,19 @@
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- ─── CURSOR ─── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ─── LOADER ─── -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-inner">
+      <span class="loader-name">Simoyi<span>.</span></span>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ─── NAVBAR ─── -->
   <div class="nav-overlay" id="navOverlay"></div>
   <header class="navbar" id="navbar">
     <nav class="nav-inner">
@@ -31,12 +43,12 @@
             <i class="fa-solid fa-xmark"></i>
           </button>
         </li>
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#home"      class="nav-link active">Home</a></li>
+        <li><a href="#about"     class="nav-link">About</a></li>
+        <li><a href="#skills"    class="nav-link">Skills</a></li>
+        <li><a href="#services"  class="nav-link">Services</a></li>
         <li><a href="#portfolio" class="nav-link">Work</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#contact"   class="nav-link">Contact</a></li>
       </ul>
 
       <div class="nav-actions">
@@ -52,16 +64,20 @@
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- ─── HERO ─── -->
   <section id="home" class="hero">
     <div class="hero-bg">
       <div class="hero-blob hero-blob--1"></div>
       <div class="hero-blob hero-blob--2"></div>
+      <div class="hero-grid"></div>
     </div>
 
     <div class="hero-layout">
-      
+      <!-- LEFT: Text content -->
       <div class="hero-content reveal">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>Available for Freelance Projects
+        </div>
 
         <h1 class="hero-title">
           Building <span class="hero-highlight">Digital</span>
@@ -84,7 +100,7 @@
 
         <div class="hero-stats">
           <div class="stat-item">
-            <strong>11+</strong>
+            <strong>4+</strong>
             <span>Projects</span>
           </div>
           <div class="stat-divider"></div>
@@ -100,7 +116,7 @@
         </div>
       </div>
 
-      
+      <!-- RIGHT: Image -->
       <div class="hero-image-wrap reveal reveal-right">
         <div class="hero-image-ring"></div>
         <div class="hero-image-ring hero-image-ring--2"></div>
@@ -119,7 +135,7 @@
     </div>
 
     <!-- Scroll indicator -->
-    <a href="#about" class="hero-scroll" id="heroScroll">
+    <a href="#about" class="hero-scroll">
       <div class="hero-scroll-mouse">
         <div class="hero-scroll-wheel"></div>
       </div>
@@ -127,7 +143,7 @@
     </a>
   </section>
 
-  <!-- MARQUEE STRIP -->
+  <!-- ─── MARQUEE STRIP ─── -->
   <div class="marquee-strip">
     <div class="marquee-track">
       <span>HTML5</span><span class="dot">·</span>
@@ -153,7 +169,7 @@
     </div>
   </div>
 
-  <!-- ABOUT SECTION -->
+  <!-- ─── ABOUT ─── -->
   <section id="about" class="about section">
     <div class="container">
       <div class="section-tag reveal"><span>About Me</span></div>
@@ -216,7 +232,7 @@
     </div>
   </section>
 
-  <!-- SKILLS SECTION -->
+  <!-- ─── SKILLS ─── -->
   <section id="skills" class="skills section">
     <div class="container">
       <div class="section-tag reveal"><span>My Skills</span></div>
@@ -253,76 +269,6 @@
                 <small>Jul – Oct 2025</small>
                 <h5>E-Business</h5>
                 <span>NPTEL Online Certification</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- PROFESSIONAL SKILLS (Soft Skills) -->
-          <div class="soft-skills-card reveal">
-            <div class="timeline-card-header">
-              <div class="tcard-icon soft"><i class="fa-solid fa-people-group"></i></div>
-              <h4>Professional Skills</h4>
-            </div>
-            <div class="soft-skills-grid">
-              <div class="soft-skill-item">
-                <div class="soft-skill-circle" data-value="92">
-                  <svg viewBox="0 0 80 80" class="ssc-svg" aria-hidden="true">
-                    <circle class="ssc-track" cx="40" cy="40" r="32"/>
-                    <circle class="ssc-fill"  cx="40" cy="40" r="32"/>
-                  </svg>
-                  <span class="ssc-percent">0%</span>
-                </div>
-                <p class="soft-skill-label"><i class="fa-solid fa-users"></i> Teamwork</p>
-              </div>
-              <div class="soft-skill-item">
-                <div class="soft-skill-circle" data-value="88">
-                  <svg viewBox="0 0 80 80" class="ssc-svg" aria-hidden="true">
-                    <circle class="ssc-track" cx="40" cy="40" r="32"/>
-                    <circle class="ssc-fill"  cx="40" cy="40" r="32"/>
-                  </svg>
-                  <span class="ssc-percent">0%</span>
-                </div>
-                <p class="soft-skill-label"><i class="fa-solid fa-comments"></i> Communication</p>
-              </div>
-              <div class="soft-skill-item">
-                <div class="soft-skill-circle" data-value="95">
-                  <svg viewBox="0 0 80 80" class="ssc-svg" aria-hidden="true">
-                    <circle class="ssc-track" cx="40" cy="40" r="32"/>
-                    <circle class="ssc-fill"  cx="40" cy="40" r="32"/>
-                  </svg>
-                  <span class="ssc-percent">0%</span>
-                </div>
-                <p class="soft-skill-label"><i class="fa-solid fa-lightbulb"></i> Creativity</p>
-              </div>
-              <div class="soft-skill-item">
-                <div class="soft-skill-circle" data-value="85">
-                  <svg viewBox="0 0 80 80" class="ssc-svg" aria-hidden="true">
-                    <circle class="ssc-track" cx="40" cy="40" r="32"/>
-                    <circle class="ssc-fill"  cx="40" cy="40" r="32"/>
-                  </svg>
-                  <span class="ssc-percent">0%</span>
-                </div>
-                <p class="soft-skill-label"><i class="fa-solid fa-clock"></i> Time Mgmt</p>
-              </div>
-              <div class="soft-skill-item">
-                <div class="soft-skill-circle" data-value="90">
-                  <svg viewBox="0 0 80 80" class="ssc-svg" aria-hidden="true">
-                    <circle class="ssc-track" cx="40" cy="40" r="32"/>
-                    <circle class="ssc-fill"  cx="40" cy="40" r="32"/>
-                  </svg>
-                  <span class="ssc-percent">0%</span>
-                </div>
-                <p class="soft-skill-label"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</p>
-              </div>
-              <div class="soft-skill-item">
-                <div class="soft-skill-circle" data-value="87">
-                  <svg viewBox="0 0 80 80" class="ssc-svg" aria-hidden="true">
-                    <circle class="ssc-track" cx="40" cy="40" r="32"/>
-                    <circle class="ssc-fill"  cx="40" cy="40" r="32"/>
-                  </svg>
-                  <span class="ssc-percent">0%</span>
-                </div>
-                <p class="soft-skill-label"><i class="fa-solid fa-arrows-to-dot"></i> Adaptability</p>
               </div>
             </div>
           </div>
@@ -366,34 +312,6 @@
           </div>
 
           <div class="skill-card">
-            <h4 class="skill-card-title"><i class="fa-solid fa-server"></i> Backend & Tools</h4>
-
-            <div class="skill-bar" data-value="65">
-              <div class="sb-head">
-                <span><i class="fa-brands fa-node-js" style="color:#68a063"></i> Node.js</span>
-                <strong>65%</strong>
-              </div>
-              <div class="sb-track"><div class="sb-fill"></div></div>
-            </div>
-
-            <div class="skill-bar" data-value="60">
-              <div class="sb-head">
-                <span><i class="fa-solid fa-database" style="color:#336791"></i> PostgreSQL</span>
-                <strong>60%</strong>
-              </div>
-              <div class="sb-track"><div class="sb-fill"></div></div>
-            </div>
-
-            <div class="skill-bar" data-value="75">
-              <div class="sb-head">
-                <span><i class="fa-brands fa-git-alt" style="color:#f05032"></i> Git / GitHub</span>
-                <strong>75%</strong>
-              </div>
-              <div class="sb-track"><div class="sb-fill"></div></div>
-            </div>
-          </div>
-
-          <div class="skill-card">
             <h4 class="skill-card-title"><i class="fa-solid fa-pen-nib"></i> Design</h4>
 
             <div class="skill-bar" data-value="95">
@@ -425,7 +343,7 @@
     </div>
   </section>
 
-  <!-- SERVICES SECTION -->
+  <!-- ─── SERVICES ─── -->
   <section id="services" class="services section">
     <div class="container">
       <div class="section-tag reveal"><span>What I Do</span></div>
@@ -482,7 +400,7 @@
     </div>
   </section>
 
-  <!-- SERVICES MODAL -->
+  <!-- ─── SERVICES MODAL ─── -->
   <div class="modal-backdrop" id="serviceModal">
     <div class="modal-card">
       <button class="modal-close" id="modalClose" aria-label="Close modal">
@@ -501,7 +419,7 @@
     </div>
   </div>
 
-  <!-- WHY HIRE ME -->
+  <!-- ─── WHY HIRE ME ─── -->
   <section id="highlights" class="highlights section">
     <div class="container">
       <div class="section-tag reveal"><span>Why Hire Me</span></div>
@@ -535,7 +453,7 @@
 
       <div class="counters-strip reveal">
         <div class="counter-item">
-          <h3 class="counter" data-target="11">0</h3>
+          <h3 class="counter" data-target="4">0</h3>
           <span>Projects Built</span>
         </div>
         <div class="counter-item">
@@ -554,7 +472,7 @@
     </div>
   </section>
 
-  <!-- PORTFOLIO SECTION -->
+  <!-- ─── PORTFOLIO ─── -->
   <section id="portfolio" class="portfolio section">
     <div class="container">
       <div class="section-tag reveal"><span>My Work</span></div>
@@ -563,169 +481,71 @@
         Hand-crafted websites built with clean HTML, CSS &amp; JavaScript — responsive and production-ready.
       </p>
 
-      <!-- CATEGORY TABS -->
-      <div class="portfolio-tabs reveal">
-        <button class="ptab active" data-filter="all">All Projects</button>
-        <button class="ptab" data-filter="barbershop">Barbershop</button>
-        <button class="ptab" data-filter="rental">Car Rental</button>
-        <button class="ptab" data-filter="food">Food App</button>
-        <button class="ptab" data-filter="finance">Finance</button>
-      </div>
-
-      <!-- FEATURED — full-width rows (Projects 1 & 2) -->
-      <div class="projects-featured" id="projectsFeatured">
-
-        <!-- PROJECT 1 -->
-        <article class="project-row " data-category="barbershop">
-          <div class="project-content reveal reveal-left">
-            <div class="project-label">
-              <span class="project-num">01</span>
-              <span class="project-cat">Barbershop Website</span>
-            </div>
-            <h3 class="project-title">LeeHairCut</h3>
-            <p class="project-desc">
-              A stylish, modern barber website featuring premium UI, animated service
-              sections, a booking experience, and a fully responsive layout.
-            </p>
-            <div class="project-tags">
-              <span class="tag-html"><i class="fa-brands fa-html5"></i> HTML5</span>
-              <span class="tag-css"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-              <span class="tag-js"><i class="fa-brands fa-js"></i> JavaScript</span>
-            </div>
-            <div class="project-actions">
-              <a href="https://lee-hair-cut-premium-barbershop.vercel.app" target="_blank" class="btn-primary">
-                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </div>
+      <!-- PROJECT 1 -->
+      <article class="project-row reveal">
+        <div class="project-content">
+          <div class="project-label">
+            <span class="project-num">01</span>
+            <span class="project-cat">Barbershop Website</span>
           </div>
-          <div class="project-visual reveal reveal-right">
-            <div class="project-screen">
-              <img src="imgs/LeeHairCut-Screenshot.png" alt="LeeHairCut Website" />
-            </div>
-            <div class="project-glow"></div>
+          <h3 class="project-title">LeeHairCut</h3>
+          <p class="project-desc">
+            A stylish, modern barber website featuring premium UI, animated service
+            sections, a booking experience, and a fully responsive layout.
+          </p>
+          <div class="project-tags">
+            <span><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span><i class="fa-brands fa-js"></i> JavaScript</span>
           </div>
-        </article>
-
-        <!-- PROJECT 2 -->
-        <article class="project-row project-row--reverse " data-category="rental">
-          <div class="project-content reveal reveal-right">
-            <div class="project-label">
-              <span class="project-num">02</span>
-              <span class="project-cat">Car Rental Platform</span>
-            </div>
-            <h3 class="project-title">Lee Car Rental</h3>
-            <p class="project-desc">
-              Premium car rental platform with a booking system, fleet showcase,
-              elegant animations, and a customer-first UX approach.
-            </p>
-            <div class="project-tags">
-              <span class="tag-html"><i class="fa-brands fa-html5"></i> HTML5</span>
-              <span class="tag-css"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-              <span class="tag-js"><i class="fa-brands fa-js"></i> JavaScript</span>
-            </div>
-            <div class="project-actions">
-              <a href="https://lee-car-rental.vercel.app" target="_blank" class="btn-primary">
-                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </div>
+          <div class="project-actions">
+            <a href="https://leehaircut-barbershop.vercel.app" target="_blank" class="btn-primary">
+              Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
           </div>
-          <div class="project-visual reveal reveal-left">
-            <div class="project-screen">
-              <img src="imgs/LCR-Screenshot.png" alt="Lee Car Rental Website" />
-            </div>
-            <div class="project-glow project-glow--2"></div>
+        </div>
+        <div class="project-visual">
+          <div class="project-screen">
+            <img src="imgs/LeeHairCut-Screenshot.png" alt="LeeHairCut Website" />
           </div>
-        </article>
+          <div class="project-glow"></div>
+        </div>
+      </article>
 
-      </div><!-- /projects-featured -->
-
-      <!-- CARD GRID — Projects 3 & 4 side by side -->
-      <div class="projects-grid" id="projectsGrid">
-
-        <!-- PROJECT 3 -->
-        <article class="project-card reveal reveal-left" data-category="food">
-          <div class="pc-image">
-            <img src="imgs/JPXFood-Screenshot.png" alt="JPX Food App" />
-            <div class="pc-overlay">
-              <a href="https://jpx-food-delivery.vercel.app/" target="_blank" class="pc-link" aria-label="View JPX Food live">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </div>
-            <div class="pc-badge">Full-Stack</div>
+      <!-- PROJECT 2 -->
+      <article class="project-row project-row--reverse reveal">
+        <div class="project-content">
+          <div class="project-label">
+            <span class="project-num">02</span>
+            <span class="project-cat">Car Rental Platform</span>
           </div>
-          <div class="pc-body">
-            <div class="pc-meta">
-              <span class="project-num">03</span>
-              <span class="project-cat">Food Ordering System</span>
-            </div>
-            <h3 class="pc-title">JPX Food</h3>
-            <p class="pc-desc">
-              Complete online food ordering &amp; delivery app for the Mutare, Zimbabwe market — 
-              full frontend, Node.js/Express backend, PostgreSQL, Stripe payments &amp; email integration.
-            </p>
-            <div class="project-tags">
-              <span class="tag-html"><i class="fa-brands fa-html5"></i> HTML5</span>
-              <span class="tag-css"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-              <span class="tag-js"><i class="fa-brands fa-js"></i> JavaScript</span>
-              <span class="tag-node"><i class="fa-brands fa-node-js"></i> Node.js</span>
-            </div>
-            <div class="pc-footer">
-              <a href="https://jpx-food-delivery.vercel.app/" target="_blank" class="btn-primary btn-sm">
-                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-              <a href="https://github.com/leesimoyi" target="_blank" class="btn-outline btn-sm">
-                GitHub <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
+          <h3 class="project-title">Lee Car Rental</h3>
+          <p class="project-desc">
+            Premium car rental platform with a booking system, fleet showcase,
+            elegant animations, and a customer-first UX approach.
+          </p>
+          <div class="project-tags">
+            <span><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span><i class="fa-brands fa-js"></i> JavaScript</span>
           </div>
-        </article>
-
-        <!-- PROJECT 4 -->
-        <article class="project-card reveal reveal-right" data-category="finance">
-          <div class="pc-image">
-            <img src="imgs/MoneyFlow-Screenshot.png" alt="MoneyFlow Finance App" />
-            <div class="pc-overlay">
-              <a href="https://personal-finance-manager-bay-pi.vercel.app/" target="_blank" class="pc-link" aria-label="View MoneyFlow live">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </div>
-            <div class="pc-badge pc-badge--purple">PWA</div>
+          <div class="project-actions">
+            <a href="https://lee-car-rental.vercel.app" target="_blank" class="btn-primary">
+              Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
           </div>
-          <div class="pc-body">
-            <div class="pc-meta">
-              <span class="project-num">04</span>
-              <span class="project-cat">Personal Finance Manager</span>
-            </div>
-            <h3 class="pc-title">MoneyFlow</h3>
-            <p class="pc-desc">
-              MoneyFlow — a modern AI-powered Personal Finance Manager built with HTML5, CSS3, JavaScript, and Chart.js, 
-              featuring a beautiful financial dashboard, income and expense management, budgeting, 
-              savings goals, interactive financial reports, smart analytics, responsive UI, dark mode, and 
-              offline-ready Progressive Web App functionality.
-            </p>
-            <div class="project-tags">
-              <span class="tag-html"><i class="fa-brands fa-html5"></i> HTML5</span>
-              <span class="tag-css"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-              <span class="tag-js"><i class="fa-brands fa-js"></i> Vanilla JS</span>
-              <span class="tag-chartjs"><i class="fa-solid fa-chart-line"></i> Chart.js</span>
-            </div>
-            <div class="pc-footer">
-              <a href="https://personal-finance-manager-bay-pi.vercel.app/" target="_blank" class="btn-primary btn-sm">
-                Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-              <a href="https://github.com/leesimoyi" target="_blank" class="btn-outline btn-sm">
-                GitHub <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
+        </div>
+        <div class="project-visual">
+          <div class="project-screen">
+            <img src="imgs/LCR-Screenshot.png" alt="Lee Car Rental Website" />
           </div>
-        </article>
-
-      </div><!-- /projects-grid -->
-
+          <div class="project-glow project-glow--2"></div>
+        </div>
+      </article>
     </div>
   </section>
 
-  <!-- TESTIMONIALS SECTION -->
+  <!-- ─── TESTIMONIALS ─── -->
   <section id="testimonials" class="testimonials section">
     <div class="container">
       <div class="section-tag reveal"><span>Kind Words</span></div>
@@ -783,28 +603,24 @@
     </div>
   </section>
 
-  <!-- CTA SECTION -->
+  <!-- ─── CTA ─── -->
   <section class="cta section">
     <div class="container">
       <div class="cta-inner reveal">
-        <div class="cta-bg-image"></div>
-        <div class="cta-overlay"></div>
-        <div class="cta-content">
-          <div class="cta-badge-sm">
-            <i class="fa-solid fa-circle-check"></i> Open to work
-          </div>
-          <h2>Have a project in mind?<br><em>Let's build it together.</em></h2>
-          <p>I design and develop clean, fast, and professional web experiences that convert visitors into customers.</p>
-          <div class="cta-actions">
-            <a href="#contact" class="btn-primary">Start a Project <i class="fa-solid fa-rocket"></i></a>
-            <a href="#portfolio" class="btn-ghost">See My Work <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
+        <div class="cta-badge-sm">
+          <i class="fa-solid fa-circle-check"></i> Open to work
+        </div>
+        <h2>Have a project in mind?<br><em>Let's build it together.</em></h2>
+        <p>I design and develop clean, fast, and professional web experiences that convert visitors into customers.</p>
+        <div class="cta-actions">
+          <a href="#contact" class="btn-primary">Start a Project <i class="fa-solid fa-rocket"></i></a>
+          <a href="#portfolio" class="btn-ghost">See My Work <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
+  <!-- ─── CONTACT ─── -->
   <section id="contact" class="contact section">
     <div class="container">
       <div class="section-tag reveal"><span>Get In Touch</span></div>
@@ -860,11 +676,11 @@
             <div class="form-row">
               <div class="form-field">
                 <label for="user_name">Full Name</label>
-                <input type="text" id="user_name" name="user_name" placeholder="Enter Your Full Name" required />
+                <input type="text" id="user_name" name="user_name" placeholder="John Doe" required />
               </div>
               <div class="form-field">
                 <label for="user_email">Email Address</label>
-                <input type="email" id="user_email" name="user_email" placeholder="Enter Your Email Address" required />
+                <input type="email" id="user_email" name="user_email" placeholder="john@example.com" required />
               </div>
             </div>
             <div class="form-field">
@@ -885,7 +701,7 @@
     </div>
   </section>
 
-  <!-- FOOTER SECTION -->
+  <!-- ─── FOOTER ─── -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
@@ -908,26 +724,22 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© 2026 Simoyi Lee — Crafted with code & creativity.</p>
+        <p>© 2026 Simoyi Lee. Designed & Built with <i class="fa-solid fa-heart"></i> in New Delhi.</p>
       </div>
     </div>
   </footer>
 
-  <!-- TOAST MESSAGE -->
+  <!-- ─── TOAST ─── -->
   <div class="toast" id="toast">
-    <div class="toast-inner">
-      <div class="toast-icon">
-        <i class="fa-solid fa-circle-check" id="toastIcon"></i>
-      </div>
-      <div class="toast-body">
-        <strong id="toastTitle">Message Sent!</strong>
-        <p id="toastMsg"></p>
-      </div>
+    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-body">
+      <strong id="toastTitle">Message Sent!</strong>
+      <p id="toastMsg"></p>
     </div>
-    <div class="toast-progress" id="toastProgress"></div>
+    <div class="toast-progress"></div>
   </div>
 
-  <!-- SCROLL TO TOP -->
+  <!-- ─── SCROLL TO TOP ─── -->
   <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
