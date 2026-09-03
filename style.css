@@ -985,7 +985,8 @@ html.dark .theme-btn #iconMoon  { display: block; }
   gap: var(--sp-sm); 
 }
 .tl-dot {
-  width: 10px; height: 10px;
+  width: 10px; 
+  height: 10px;
   border-radius: 50%;
   background: var(--clr-accent);
   margin-top: 6px;
@@ -1046,7 +1047,10 @@ html.dark .theme-btn #iconMoon  { display: block; }
   color: var(--clr-text-2);
   margin-bottom: 8px;
 }
-.sb-head strong { font-size: var(--fz-xs); color: var(--clr-accent); }
+.sb-head strong { 
+  font-size: var(--fz-xs); 
+  color: var(--clr-accent); 
+}
 .sb-track {
   height: 6px;
   background: var(--clr-surface-2);
@@ -1146,8 +1150,10 @@ html.dark .theme-btn #iconMoon  { display: block; }
 
 .sc-line {
   position: absolute;
-  bottom: 0; left: 0;
-  width: 0; height: 3px;
+  bottom: 0; 
+  left: 0;
+  width: 0; 
+  height: 3px;
   background: var(--clr-accent);
   transition: width 0.4s var(--ease);
   border-radius: 0 var(--r-full) var(--r-full) 0;
