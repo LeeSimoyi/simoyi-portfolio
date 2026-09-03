@@ -1089,11 +1089,14 @@ html.dark .theme-btn #iconMoon  { display: block; }
 }
 .service-card:hover .sc-number { color: var(--clr-accent-glow); }
 .sc-icon {
-  width: 52px; height: 52px;
+  width: 52px; 
+  height: 52px;
   border-radius: var(--r-md);
   background: var(--clr-accent-glow);
   color: var(--clr-accent);
-  display: flex; align-items: center; justify-content: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
   font-size: 1.3rem;
   transition: background 0.3s var(--ease), color 0.3s var(--ease),transform 0.3s var(--ease-spring);
 }
@@ -1102,8 +1105,16 @@ html.dark .theme-btn #iconMoon  { display: block; }
   color: #fff;
   transform: rotate(-10deg) scale(1.1);
 }
-.service-card h3 { font-size: var(--fz-md); font-weight: 700; color: var(--clr-text-1); }
-.service-card p  { font-size: var(--fz-sm); color: var(--clr-text-2); line-height: 1.7; flex: 1; }
+.service-card h3 { 
+  font-size: var(--fz-md); 
+  font-weight: 700; 
+  color: var(--clr-text-1); 
+}
+.service-card p  { 
+  font-size: var(--fz-sm);
+  color: var(--clr-text-2); 
+  line-height: 1.7; flex: 1; 
+}
 
 .sc-btn {
   display: inline-flex;
