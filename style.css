@@ -1719,11 +1719,15 @@ html.dark .theme-btn #iconMoon  { display: block; }
 }
 
 .contact-details {
-  display: flex; flex-direction: column; gap: var(--sp-sm);
+  display: flex; 
+  flex-direction: column; 
+  gap: var(--sp-sm);
   margin-bottom: var(--sp-lg);
 }
 .cd-item {
-  display: flex; align-items: center; gap: var(--sp-sm);
+  display: flex; 
+  align-items: center; 
+  gap: var(--sp-sm);
   padding: 14px var(--sp-md);
   background: var(--clr-surface);
   border: 1px solid var(--clr-border);
