@@ -2271,8 +2271,16 @@ body.dark .toast-progress{ background:rgba(255,255,255,.08); }
 
   .hero-scroll { display: none; }
 
-  .hero-blob--1 { width: 300px; height: 300px; opacity: 0.25; }
-  .hero-blob--2 { width: 200px; height: 200px; opacity: 0.1; }
+  .hero-blob--1 { 
+    width: 300px; 
+    height: 300px; 
+    opacity: 0.25; 
+  }
+  .hero-blob--2 { 
+    width: 200px; 
+    height: 200px; 
+    opacity: 0.1;
+  }
 
   .modal-backdrop {
     padding: 12px;
