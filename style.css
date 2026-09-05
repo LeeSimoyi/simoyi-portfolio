@@ -1164,7 +1164,8 @@ html.dark .theme-btn #iconMoon  { display: block; }
    SERVICES MODAL
    ========================================================================== */
 .modal-backdrop {
-  position: fixed; inset: 0;
+  position: fixed; 
+  inset: 0;
   background: rgba(0,0,0,0.55);
   backdrop-filter: blur(12px);
   display: flex;
@@ -1175,7 +1176,10 @@ html.dark .theme-btn #iconMoon  { display: block; }
   transition: opacity 0.35s var(--ease), visibility 0.35s var(--ease);
   z-index: 5000;
 }
-.modal-backdrop.active { opacity: 1; visibility: visible; }
+.modal-backdrop.active {
+  opacity: 1; 
+  visibility: visible; 
+}
 
 .modal-card {
   width: 100%;
@@ -1275,11 +1279,16 @@ html.dark .theme-btn #iconMoon  { display: block; }
   gap: 10px;
 }
 .modal-list li {
-  display: flex; align-items: center; gap: 10px;
+  display: flex; 
+  align-items: center;
+  gap: 10px;
   font-size: var(--fz-sm);
   color: var(--clr-text-2);
 }
-.modal-list li i { color: var(--clr-accent); flex-shrink: 0; }
+.modal-list li i { 
+  color: var(--clr-accent); 
+  flex-shrink: 0; 
+}
 
 /* ==========================================================================
    HIGHLIGHTS
