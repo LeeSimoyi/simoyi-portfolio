@@ -1839,14 +1839,22 @@ html.dark .theme-btn #iconMoon  { display: block; }
   padding: var(--sp-xl);
   box-shadow: var(--shadow-md);
 }
-.contact-form { display: flex; flex-direction: column; gap: var(--sp-md); }
+.contact-form { 
+  display: flex; 
+  flex-direction: column;
+  gap: var(--sp-md); 
+}
 
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--sp-md);
 }
-.form-field { display: flex; flex-direction: column; gap: 6px; }
+.form-field { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 6px; 
+}
 .form-field label {
   font-family: var(--font-display);
   font-size: var(--fz-sm);
