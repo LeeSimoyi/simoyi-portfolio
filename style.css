@@ -1603,12 +1603,19 @@ html.dark .theme-btn #iconMoon  { display: block; }
   font-style: italic;
 }
 
-.testi-author { display: flex; align-items: center; gap: 12px; }
+.testi-author { 
+  display: flex; 
+  align-items: center; 
+  gap: 12px; 
+}
 .testi-avatar {
-  width: 44px; height: 44px;
+  width: 44px; 
+  height: 44px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--clr-accent), var(--clr-accent-dim));
-  display: flex; align-items: center; justify-content: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: var(--fz-sm);
