@@ -2371,8 +2371,11 @@ body.dark .toast-progress{ background:rgba(255,255,255,.08); }
   .footer-socials  { justify-content: center; }
 
   .toast{
-    left:16px; right:16px; bottom:16px;
-    width:auto; padding:16px;
+    left:16px; 
+    right:16px; 
+    bottom:16px;
+    width:auto; 
+    padding:16px;
     border-radius:18px;
   }
   .toast-icon{ width:46px; height:46px; border-radius:14px; font-size:1.1rem; }
