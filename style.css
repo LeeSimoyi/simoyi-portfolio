@@ -2378,8 +2378,10 @@ body.dark .toast-progress{ background:rgba(255,255,255,.08); }
   }
   .modal-close {
     position: absolute;
-    top: 14px; right: 14px;
-    width: 36px; height: 36px;
+    top: 14px; 
+    right: 14px;
+    width: 36px; 
+    height: 36px;
     z-index: 20;
   }
   .modal-img {
@@ -2408,7 +2410,10 @@ body.dark .toast-progress{ background:rgba(255,255,255,.08); }
     min-height: 320px;
   }
   .contact-form-wrap { padding: var(--sp-lg) var(--sp-md); }
-  .scroll-top { bottom: 16px; right: 16px; }
+  .scroll-top { 
+    bottom: 16px;
+    right: 16px; 
+  }
 
   .footer-inner    { flex-direction: column; text-align: center; }
   .footer-links    { justify-content: center; }
