@@ -2257,9 +2257,15 @@ body.dark .toast-progress{ background:rgba(255,255,255,.08); }
   .contact-grid  { grid-template-columns: 1fr; }
   .testi-grid    { grid-template-columns: 1fr; }
 
-  .section { padding-top: 60px; padding-bottom: 60px; }
+  .section { 
+    padding-top: 60px; 
+    padding-bottom: 60px; 
+  }
 
-  .about-img-frame { aspect-ratio: 16/9; max-height: 360px; }
+  .about-img-frame { 
+    aspect-ratio: 16/9;
+    max-height: 360px; 
+  }
   .hero-stats { gap: var(--sp-md); }
 
   .modal-card {
